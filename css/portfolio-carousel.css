@@ -68,6 +68,9 @@
   .ms--images .ms-slide:nth-child(4) .ms-slide__image {
     background-image: url("../img/popcorn.png");
   }
+  .ms--images .ms-slide:nth-child(4) .ms-slide__image {
+    background-image: url("../img/popcorn.png");
+  }
   
   .ms--images .ms-slide__image-container {
     width: 80%;
