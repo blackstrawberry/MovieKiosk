@@ -1,8 +1,9 @@
+// 슬라이드 할 수 있게 해주는 함수 주석처리하면 이미지도 안불러와짐 
 (function() {
 
     var slidersContainer = document.querySelector('.sliders-container');
 
-    // Initializing the numbers slider
+    // 영화 상단의 01~05까지 넘겨지게 해주는 것 
     var msNumbers = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--numbers',
@@ -25,6 +26,8 @@
         '은혼 <br>더 파이널',
         '정글 <Br>크루즈'
     ];
+
+    // 타이틀 옆으로 넘길 때 마다 바뀌게 해주는 함수 
     var msTitles = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--titles',
@@ -49,6 +52,8 @@
         '액션, 어드밴쳐(12세)'
     ];
 
+
+    // 장르 옆으로 넘길 때 마다 바뀌게 해주는 함수 
     // Initializing the links slider
     var msLinks = new MomentumSlider({
         el: slidersContainer,
