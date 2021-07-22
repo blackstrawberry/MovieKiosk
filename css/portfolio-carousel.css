@@ -54,19 +54,23 @@
   }
   
   .ms--images .ms-slide:nth-child(1) .ms-slide__image {
-    background-image: url("../img/popcorn.png");
+    background-image: url("../img/pic01.jpg");
   }
   
   .ms--images .ms-slide:nth-child(2) .ms-slide__image {
-    background-image: url("../img/popcorn.png");
+    background-image: url("../img/pic02.jpg");
   }
   
   .ms--images .ms-slide:nth-child(3) .ms-slide__image {
-    background-image: url("../img/popcorn.png");
+    background-image: url("../img/무한열차1.jpg");
   }
   
   .ms--images .ms-slide:nth-child(4) .ms-slide__image {
-    background-image: url("../img/popcorn.png");
+    background-image: url("../img/은혼더파이널.jpg");
+  }
+  
+  .ms--images .ms-slide:nth-child(5) .ms-slide__image {
+    background-image: url("../img/정글크루즈1.jpg");
   }
   
   .ms--images .ms-slide__image-container {
