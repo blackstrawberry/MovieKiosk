@@ -17,12 +17,13 @@
         interactive: false
     });
 
-    // Initializing the titles slider
+    // 타이틀 배열
     var titles = [
-        'King of the Ring Fight',
-        'Sound of Streets',
-        'Urban Fashion',
-        'Windy Sunset'
+        '보스<br> 베이비2',
+        '블랙 <br>위도우',
+        '귀멸의칼날 <br>무한열차',
+        '은혼 <br>더 파이널',
+        '정글 <Br>크루즈'
     ];
     var msTitles = new MomentumSlider({
         el: slidersContainer,
@@ -39,13 +40,25 @@
         interactive: false
     });
 
+    // 장르 배열 
+    var Genre = [
+        '애니매이션<br>(전체)',
+        '액션, 어드밴쳐(12세)',
+        '애니매이션<br>(15세)',
+        '애니매이션<br>(15세)',
+        '액션, 어드밴쳐(12세)'
+    ];
+
     // Initializing the links slider
     var msLinks = new MomentumSlider({
         el: slidersContainer,
         cssClass: 'ms--links',
         range: [0, 4],
-        rangeContent: function () {
-            return '<a class="ms-slide__link">View Case</a>';
+        rangeContent: function (i) {
+         
+            // return '<a class="ms-slide__link"></a>';
+            return Genre[i];
+       
         },
         vertical: true,
         interactive: false
