@@ -13,7 +13,8 @@
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
   <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="sunny.css">
+  <link rel="stylesheet" href="css/tool.css">
+  
 </head>
 <body>
     
@@ -40,35 +41,31 @@
 
 <div id="open-modal" class="modal-window">
     <div>
-      <a href="#" title="Close" class="modal-close">Close</a>
+      <!-- <a href="#" title="Close" class="modal-close">Close</a> -->
         <!-- modal -->
 
-        <div class="modal-body">
-           
-            <div class="sunlight-content">
-              <div class="sun">
-                <div class="sun-face">
-                  <div class="eyes-block">
-                    <span class="eyes left-eye"></span>
-                    <span class="eyes right-eye"></span>
-                  </div>
-                  <div class="mouth">
-                    <span class="tongue"></span>
-                  </div>
-                </div>
-                <span class="box"></span>
-              </div>
-              <div class="sunlight-box">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
+        <div class="card">
+            <img src="img/credit.png" width="250px" alt="">
+             <div class="text">
+               <div class="title">
+                 확인 버튼을 누르면 결제가 완료됩니다
+               </div>
 
+               <div class="info">
+                  상품정보, 가격정보 
+            
+               </div>
+             </div>
+     
+             <div class="buttons">
+                <a href="#" class="modal-close">Close</a>
+               <div  class="button" OnClick="location.href ='index.html'">취소</div>
+               <div class="button button-primary">확인</div>
+             </div>
+           </div>
 
-
-
+          
+        
 
 
       </div>
@@ -354,6 +351,8 @@
           },
         });
       </script>
+
+
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
 <!-- <script src="menu.js"></script> -->
