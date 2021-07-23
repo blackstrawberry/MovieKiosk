@@ -225,7 +225,23 @@ $(document).ready(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
 		var productImage = $(productCard).find('img').get(0).src;
-		var productName = $(productCard).find('.product_name').get(0).innerHTML;				
+		var productName = $(productCard).find('.product_name').get(0).innerHTML;
+		let productPrice = 	$(productCard).find('.product_price').get(0).innerHTML;
+		// let cartItem = {};
+		// for (i=1; i< $('.cart-item').length+1;i++){
+		// 	let menu = $(cart).find('.span').get(i).innerHTML;
+		// 	let price = $(cart).find('.strong').get(i).innerHTML;
+		// 	cartItem.menu = price;
+		// 	console.log(cartItem);
+		// }
+		// for (i=1; i< $('.cart-item').length+1;i++){
+		// 	console.log($(cart).find('span').get(i).innerHTML);
+		// 	console.log($(cart).find('strong').get(i-1).innerHTML);
+		// }
+		// if ($(cart).find('.cart-item').get(0).innerHTML === true){
+		// 	console.log($(cart).find('.cart-item').get(0).innerHTML);		
+		// 		console.log(cartItem);
+		// }
 
 		$("body").append('<div class="floating-cart"></div>');		
 		var cart = $('div.floating-cart');		
@@ -237,7 +253,7 @@ $(document).ready(function(){
 			$("body").removeClass("MakeFloatingCart");
 
 
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>$39</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
+			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>"+productPrice+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
 
 			$("#cart .empty").hide();			
 			$("#cart").append(cartItem);
