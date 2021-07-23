@@ -1,8 +1,24 @@
-<?php
-    session_start();
-?>
+<?php 
+    // include_once "./dbconnect.php";
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', FALSE);
 
-<script src="https://code.jquery.com/jquery-latest.js"></script>
+    //로컬에서 사용하는 변수
+    $host = "localhost";
+    $user = "root";
+    $pw = "1234";
+    $dbName = "movie_kiosk";
+    $conn= mysqli_connect($host, $user, $pw, $dbName);
+
+    
+    // 서버에서 사용하는 변수
+    // $host = "localhost";
+    // $user = "w1004mesmg";
+    // $pw = "sunmoons1s2s3!";
+    // $dbName = "w1004mesmg";
+    // $conn= mysqli_connect($host, $user, $pw, $dbName);
+
+?>
 <style>
         /* The Modal (background) */
         .modal {
@@ -28,17 +44,10 @@
         }
  
 </style>
-
-<?php
-
-    $host = "localhost";
-    $user = "root";
-    $pw = "1234";
-    $dbName = "movie_kiosk"; // 서버에서 사용할때는 "w1004mesmg"로 해야함 
-    $conn= mysqli_connect($host, $user, $pw, $dbName); //db 연결부분
-
-?>
 <html>
+    <head>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+    </head>
     <body>
         <h1>스낵</h1>
         <!-- The Modal -->
@@ -46,9 +55,18 @@
             
             <!-- Modal content -->
             <div class="modal-content">
-                    <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">공지</span></b></span></p>
-                    <p style="text-align: center; line-height: 1.5;"><br />여기에 내용</p>
+                    <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">&times;</span></b></span>
+                    </p>
+                    <p style="text-align: center; line-height: 1.5;"><br />
+                        여기에 내용<br>
+                        <button>-</button>&nbsp;&nbsp;&nbsp;<button>+</button>
+                    </p>
                     <p><br /></p>
+                <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+                    <span class="pop_bt" style="font-size: 13pt;" >
+                            확인
+                    </span>
+                </div>
                 <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
                     <span class="pop_bt" style="font-size: 13pt;" >
                             닫기
@@ -57,10 +75,20 @@
             </div>
         </div>
         <script type="text/javascript">
-      
-            jQuery(document).ready(function() {
-                    $('#myModal').show();
-            });
+
+            //시작하자마자 모달 발생
+            // jQuery(document).ready(function() {
+            //         $('#myModal').show();
+            // });
+
+            //팝업 Open
+            function open_pop(title) {
+                $("#title").html("ajax를 통해 얻어온 id에 해당하는 값");
+	            $("#content").html("ajax를 통해 얻어온 id에 해당하는 값");
+        	    //modal을 띄워준다.  
+	            $("#myModal").modal('show');
+            }
+
             //팝업 Close 기능
             function close_pop(flag) {
                 $('#myModal').hide();
@@ -70,27 +98,25 @@
     </body>
 </html>
 <?php
-    // 스낵 리스트 불러오기, 배열 만들기
+    // 스낵 리스트 불러오기, 장바구니 배열
     $food = array();
     $basket = array();
     $sql = "SELECT * FROM food";
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)){
-        // echo $row['menu']." ".$row['price']."<br>";
         $food[$row['menu']] = $row['price'];
     }
 
-    // var_dump($food);
-    // echo "<br>";
-    // echo $food['스몰세트'];
 
 
     echo "<h2>메뉴</h2>";
 
     $result = mysqli_query($conn, $sql);
     while($row = mysqli_fetch_array($result)){
+        echo "<div id=".$row['menu'].">";
         echo $row['menu']." ".$row['price'];
-        echo "<button>선택</button><br>";
+        echo "<button onclick='open_pop(".$row['menu'].");'>선택</button><br>";
+        echo "</div>";
     }
 
 
