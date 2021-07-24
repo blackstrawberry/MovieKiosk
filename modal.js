@@ -101,18 +101,27 @@ ticketing.addEventListener('click', function(){
 
 //poster영역에 이미지 보이게 하는 함수
 function paintTodo(posterNumber){
+    
     const image = new Image();
-    image.src = `images/${posterNumber}.jpg`;
+    image.src = `images/${posterNumber}.jpg`;   
     image.classList.add(`poster_img`);
     poster.appendChild(image);
 }
 
-//초기 함수
-function init(){
+function paintTodo3(){
     
-    const posterNumber = 0;
+    const image = new Image();
+    image.src = `images/3.jpg`;   
+    image.classList.add(`poster_img`);
+    poster.appendChild(image);
+}
+
+
+//초기 함수
+function init1(){
+    const posterNumber = 4;           // 이부분이엇음
     paintTodo(posterNumber);
    // totalA.innerText = "hello";
-   
 }
-init();
+
+init1();

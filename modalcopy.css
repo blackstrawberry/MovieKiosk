@@ -256,11 +256,12 @@ html {
 }
 .screen{
     width:100%;
-    height:20%;
+    height:30%;
     background-color:gainsboro;
     margin:0 auto;
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
+    border-radius: 20px;
 }
 .seat{
     width:100%;
