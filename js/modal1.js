@@ -1,4 +1,7 @@
 const poster = document.querySelector(".poster");
+const poster1 = document.querySelector(".poster1");
+
+
 const seatColor = document.querySelector(".seat");
 const movieChoice = document.querySelector(".movie_name");
 const targetPlace = document.querySelector(".movie_name_place");
@@ -15,9 +18,9 @@ let countSeat =0;
 let seatPrice=0;
 seatColor.addEventListener('click', (e) =>{
  
-    if(countSeat >= 5){
+    if(countSeat >= 4){
         if(e.target.style.backgroundColor != "darkred"){
-            alert("거리두기 제한으로 6인 미만으로 선택 가능합니다.");
+            modal("거리두기 제한으로 5인 미만으로 선택 가능합니다.");
         }else{
             e.target.style.backgroundColor="pink";
             countSeat--;
@@ -61,6 +64,7 @@ seatColor.addEventListener('click', (e) =>{
     totalA.innerText += " " + movieChoiceString;
     array.push(movieChoiceString);
     a= movieChoiceString;
+
      let image = document.querySelector(".poster img");
      poster.removeChild(image);
      paintTodo(idx);
@@ -99,7 +103,7 @@ ticketing.addEventListener('click', function(){
 
 
 
-//poster영역에 이미지 보이게 하는 함수
+// poster영역에 이미지 보이게 하는 함수
 function paintTodo(posterNumber){
     
     const image = new Image();
@@ -108,20 +112,45 @@ function paintTodo(posterNumber){
     poster.appendChild(image);
 }
 
-function paintTodo3(){
+// poster영역에 이미지 보이게 하는 함수
+// function paintTodo(){
     
-    const image = new Image();
-    image.src = `images/3.jpg`;   
-    image.classList.add(`poster_img`);
-    poster.appendChild(image);
-}
+//     const image = new Image();
+//     image.src = `images/1.jpg`;   
+//     image.classList.add(`poster_img`);
+//     poster.appendChild(image);
+// }
+
+// function paintTodo1(){
+    
+//     const image = new Image();
+//     image.src = `images/2.jpg`;   
+//     image.classList.add(`poster_img`);
+//     poster.appendChild(image);
+// }
+
+// function paintTodo1(posterNumber){
+    
+//     const image1 = new Image();
+//     image1.src = `images/${posterNumber}.jpg`;   
+//     image1.classList.add(`poster_img1`);
+//     poster1.appendChild(image1);
+// }
+
+// function paintTodo3(){
+    
+//     const image = new Image();
+//     image.src = `images/3.jpg`;   
+//     image.classList.add(`poster_img`);
+//     poster.appendChild(image);
+// }
 
 
 //초기 함수
 function init1(){
-    const posterNumber = 4;           // 이부분이엇음
+    const posterNumber = 2;           // 이부분이엇음
     paintTodo(posterNumber);
    // totalA.innerText = "hello";
 }
-
-init1();
+ init1();
+// init3();

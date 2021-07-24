@@ -100,7 +100,7 @@
 									<span class="image">
 										<img src="images/pic01.jpg" />
 									</span>
-									<a onclick="next_page1(); paintTodo(3);">
+									<a onclick="next_page1();  paintTodo1();">
 										<h2>보스 베이비2</h2>
 										<div class="content">
 											<p>애니매이션 (전체이용가)</p>
@@ -112,7 +112,7 @@
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a onclick="next_page2();">
+									<a onclick="next_page2();  paintTodo1();">
 										<h2>블랙 위도우</h2>
 										<div class="content">
 											<p>액션, 어드밴쳐 (12세).</p>

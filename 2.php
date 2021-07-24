@@ -244,6 +244,6 @@
 							</section>
 						</div>
 
-						<script src="modal.js"></script>
+						<script src="./js/modal.js"></script>
 					
  
