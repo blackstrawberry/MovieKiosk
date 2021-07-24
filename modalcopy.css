@@ -1,0 +1,358 @@
+* { box-sizing: border-box }
+.hide { display: none }
+
+
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ 
+  
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  
+  
+}
+/* .MMM {
+  position: relative;
+  top: 0;
+  left: 50;
+  width: 100%;
+  height: 100%;
+  
+} */
+.container___ {
+  width: 75%;
+  margin: 0 auto;
+}
+.container___ > p {
+  line-height: 1.6;
+}
+
+.modal {
+  position: fixed;
+  display: block;
+  width: 99%;
+  height: 98%;
+  background: transparent;
+  overflow: hidden;
+  border-radius: .2em;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  height: 3em;
+  width: 10em;
+  line-height: 3em;
+  border-radius: 1.5em;
+  
+  font-weight: 700;
+  background: #34383c;
+  cursor: pointer;
+  user-select: none;
+  
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.modal .inside { 
+  opacity: 0;
+  display: none;
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  text-align: left;
+  padding: 2em;
+  
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.inside p { margin: 0 }
+
+.inside .btn-close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  
+  background: rgba(0,0,0,.5);
+  font-size: .8em;
+  text-align: center;
+  
+  height: 3em;
+  width: 3em;
+  line-height: 3em;
+  border-radius: 3em;
+  cursor: pointer;
+}
+
+#modalToggle:checked ~ .modal .btn-open {
+  animation-name: btnExpand;
+}
+#modalToggle:checked ~ .modal .inside {
+  display: block;
+  animation-name: delayedFadeIn;
+}
+
+.inner_container{
+    display:o;
+    width:880px;
+    height:480px;
+    z-index: 2;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.poster{
+    width:37%;
+    height: 85%;
+   
+    float:left;
+    border-radius: 20px;
+    margin-top:30px;
+}
+.poster_img{
+    width:100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+    position: relative;
+}
+.reservation{
+    width:60%;
+    height: 83%;
+    float:right;
+    margin-top:30px;
+    border-radius: 20px;
+}
+.select_movie{
+    width: 100%;
+    height: 10%;
+    border-radius: 20px;
+}
+.movie_name_place{
+    padding-left:20px;
+    width:17%;
+    height: 100%;
+    font-size: 20px;
+    float:left;
+    border-right: 1px solid;
+    background-color: rgb(206, 77, 152);
+    color:black;
+}
+
+
+.movie_name_date{
+    padding-left:20px;
+    width:20%;
+    height: 100%;
+    font-size: 20px;
+    float:left;
+    border-right: 1px solid;
+    background-color:rgb(206, 77, 152);
+    color:black;
+}
+
+.movie_name_time{
+    padding-left:20px;
+    width:21%;
+    height: 100%;
+    font-size: 20px;
+    float:left;
+    border-right: 1px solid;
+    background-color: rgb(206, 77, 152);
+    color:black;
+}
+
+.movie_name{
+    padding-left:20px;
+    width:27%;
+    height: 100%;
+    font-size: 20px;
+    float:left;
+    border-right: 1px solid;
+    background-color: rgb(206, 77, 152);
+    color:black;
+}
+
+.movie_people{
+  padding-left:30px;
+  width:15%;
+  height: 100%;
+  font-size: 20px;
+  float:left;
+  background-color: rgb(206, 77, 152);
+  color:black;
+}
+
+
+.seat_reservation{
+    width: 100%;
+    height: 76%;
+    
+}
+.seat_reservation_left{
+    width:70%;
+    height:100%;
+    float: left;
+}
+.seat_reservation_right{
+    width:30%;
+    height:100%;
+   
+    float: left;
+    position: relative;
+}
+.ticketing{
+  
+    width:132px;
+    height:60px;
+    float:right;
+    color:white;
+    text-align: center;
+}
+.ticketing input{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: rgb(238, 123, 123);
+    color:white;
+    
+}
+.color_explanation{
+    position: absolute;
+    top: 65%;
+    left:50%;
+    transform: translate(-40%, -30%);
+    
+    width:130px;
+}
+.color_explanation table{
+    width:100%;
+
+}
+.selected{
+    width:35px;
+    background-color:darkred;
+}
+.reserved{
+    width:35px;
+    background-color:cornflowerblue;
+}
+.empty{
+    width:35px;
+    background-color: pink;
+}
+.screen{
+    width:100%;
+    height:30%;
+    background-color:gainsboro;
+    margin:0 auto;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 20px;
+}
+.seat{
+    width:100%;
+    height:84%;
+   
+    margin-top:18px;
+}
+.seat_left{
+    width:20%;
+    height:90%;
+    
+    float: left;
+    margin:13px 0px;
+}
+.seat_middle{
+    margin-left:-10px;
+    width:40%;
+    height:90%;
+    background-color:ivory;
+    float: left;
+    margin:13px 36px;
+}
+.seat_right{
+    width:20%;
+    height:90%;
+    
+    float: left;
+    margin:13px 0px;
+}
+.seat_chair{
+    width:75px;
+    height: 230px;
+    
+}
+.seat_chair_middle{
+    width:143px;
+    height: 230px;
+    
+    
+}
+.seat_chair > tr,td{
+    border:7px solid white;
+    background-color:pink;
+}
+
+.total_price_a{
+    width: 100%;
+    height: 9%;
+  
+    margin-top:10px;
+    padding-top:13px;
+}
+.total_price_b{
+    width: 100%;
+    height: 9%;
+  
+    margin-top:10px;
+   
+}
+
+
+@keyframes btnExpand {
+  15% {
+    color: transparent;
+    width: 10em;
+  }
+  35% {
+    width: 3em;
+    height: 3em;
+    border-radius: 9999px;
+    margin: 0;
+  }
+  to {
+    width: 9999px;
+    height: 9999px;
+    border-radius: 9999px;
+    color: transparent;
+  }
+}
+
+@keyframes delayedFadeIn {
+  from: {
+    opacity: 0
+  }
+  55% {
+    opacity: 0
+  }
+  65% {
+    opacity: 1
+  }
+  to {
+    opacity: 1
+  }
+}
