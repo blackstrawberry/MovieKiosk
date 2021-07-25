@@ -1,0 +1,355 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snak</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/addTo.js"></script>
+    <!-- <link rel="stylesheet" href="./css/shop.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/tool.css">
+  
+</head>
+<body>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<div id="wrapper">
+<div class="cart-icon-top">
+</div>
+
+<div class="cart-icon-bottom">
+</div>
+
+
+
+
+<div class="modal_open" id="checkout" >
+    <div class="container">
+        <div class="interior">
+          <a class="btn" href="#open-modal">payment</a>
+        </div>
+      </div>
+</div>
+
+
+
+<div id="open-modal" class="modal-window">
+    <div>
+      <!-- <a href="#" title="Close" class="modal-close">Close</a> -->
+        <!-- modal -->
+
+        <div class="card">
+            <img src="img/credit.png" width="250px" alt="">
+             <div class="text">
+               <div class="title">
+                 확인 버튼을 누르면 결제가 완료됩니다
+               </div>
+
+               <div class="info">
+                  상품정보, 가격정보 
+            
+               </div>
+             </div>
+     
+             <div class="buttons">
+                <a href="#" class="modal-close">Close</a>
+               <div  class="button" OnClick="location.href ='index.html'">취소</div>
+               <div class="button button-primary">확인</div>
+             </div>
+           </div>
+
+          
+        
+
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+<div id="header">	
+	
+</div>
+
+<div id="sidebar">
+	<h3>CART</h3>
+    <div id="cart">
+    	<span class="empty">No items in cart.</span>       
+    </div>
+    
+    
+    
+   
+</div>
+
+<!-- <div id="grid-selector">
+       <div id="grid-menu">
+       	   View:
+           <ul>           	   
+               <li class="largeGrid"><a href=""></a></li>
+               <li class="smallGrid"><a class="active" href=""></a></li>
+           </ul>
+       </div>
+       
+       Showing 1–9 of 48 results 
+</div> -->
+
+
+
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <!-- ////////////// -->
+            <div class="product">
+    	
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/popcorn.png" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                         
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">6500원</span>
+                                <span class="product_name">스몰세트</span>    
+                                <p>팝콘(M)1+탄산음료(M)1</p>                                            
+                                <br>
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                              
+                            </div>    
+                                               
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                   
+                </div>	
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product">
+    
+                <div class="make3D">
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/popcorn2.png" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <!-- <div class="view_gallery">View gallery</div> -->
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">9000원</span>
+                                <span class="product_name">CGV콤보</span>    
+                                <p>팝콘(L)1+탄산음료(M)2</p>                                            
+                                <br>
+                            
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                                
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                 
+                </div>	
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+              
+    <div class="product">
+    
+        <div class="make3D">        
+            <div class="product-front">
+                <div class="shadow"></div>
+                <img src="./img/popcorn3.png" alt="" />
+                <div class="image_overlay"></div>
+                <div class="add_to_cart">Add to cart</div>
+                <!-- <div class="view_gallery">View gallery</div> -->
+                <div class="stats">        	
+                    <div class="stats-container">
+                        <span class="product_price">5000원</span>
+                        <span class="product_name">고소팝콘(L)</span>    
+                        <p>고소팝콘(L)</p>                                            
+                        <br>
+                        <div class="product-options">
+                        <strong>원산지</strong>
+                        <span>옥수수: 미국산</span>
+                      
+                    </div>                       
+                    </div>                         
+                </div>
+            </div>
+            
+             
+        </div>	
+    </div>
+          </div>
+
+
+          <div class="swiper-slide">
+            <div class="product">
+    
+                <div class="make3D">        
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/large.png" width="600px" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <!-- <div class="view_gallery">View gallery</div> -->
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">5000원</span>
+                                <span class="product_name">라지콤보</span>    
+                                <p>고소팝콘(L)</p>                                            
+                                <br>
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                              
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                     
+                </div>	
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product">
+    
+                <div class="make3D">        
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/nacho.png" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <!-- <div class="view_gallery">View gallery</div> -->
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">5000원</span>
+                                <span class="product_name">칠리치즈나쵸</span>    
+                                <p>고소팝콘(L)</p>                                            
+                                <br>
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                              
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                     
+                </div>	
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product">
+    
+                <div class="make3D">        
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/ika.png" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <!-- <div class="view_gallery">View gallery</div> -->
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">5000원</span>
+                                <span class="product_name">오징어</span>    
+                                <p>고소팝콘(L)</p>                                            
+                                <br>
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                              
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                     
+                </div>	
+            </div>
+          </div>
+
+
+          <div class="swiper-slide">
+
+            <div class="product">
+    
+                <div class="make3D">        
+                    <div class="product-front">
+                        <div class="shadow"></div>
+                        <img src="./img/hotdog.png" alt="" />
+                        <div class="image_overlay"></div>
+                        <div class="add_to_cart">Add to cart</div>
+                        <!-- <div class="view_gallery">View gallery</div> -->
+                        <div class="stats">        	
+                            <div class="stats-container">
+                                <span class="product_price">5000원</span>
+                                <span class="product_name">핫도그</span>    
+                                <p>고소팝콘(L)</p>                                            
+                                <br>
+                                <div class="product-options">
+                                <strong>원산지</strong>
+                                <span>옥수수: 미국산</span>
+                              
+                            </div>                       
+                            </div>                         
+                        </div>
+                    </div>
+                    
+                     
+                </div>	
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<!-- <script src="menu.js"></script> -->
+
+
+</body>
+</html>
