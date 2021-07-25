@@ -1,6 +1,9 @@
 
 
             <div id="CM">
+				<div>
+					<h2 style="color:white; margin-top:-40px;">상영관부터 순서대로 클릭해주세요!</h2>
+				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
 				<div>
@@ -11,17 +14,11 @@
 												<div class="select_movie">
 												
 														<select class="movie_name_place">
-															<option>씨발</option>
+															<option>상영관</option>
 															<option>2 D</option>
 															<option>3 D</option>
 															<option>4 D X</option>
-                                                            
-     
-															<option>동대문(3관)</option>
-															<option>성수(2관)</option>
-															<option>성수(7관)</option>
-															<option>홍대(3관)</option>
-									
+                                                
 														</select>
 														<select class="movie_name_date">
 															<option>날짜</option>
@@ -244,6 +241,6 @@
 							</section>
 						</div>
 
-						<script src="modal.js"></script>
+						<script src="./js/modal1.js"></script>
 					
  

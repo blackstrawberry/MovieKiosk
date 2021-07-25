@@ -1,6 +1,9 @@
 
 
             <div id="CM">
+				<div>
+					<h2 style="color:white; margin-top:-40px;">상영관부터 순서대로 클릭해주세요!</h2>
+				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
 				<div>
@@ -15,13 +18,6 @@
 															<option>2 D</option>
 															<option>3 D</option>
 															<option>4 D X</option>
-                                                            
-     
-															<option>동대문(3관)</option>
-															<option>성수(2관)</option>
-															<option>성수(7관)</option>
-															<option>홍대(3관)</option>
-									
 														</select>
 														<select class="movie_name_date">
 															<option>날짜</option>
@@ -45,6 +41,7 @@
 															<option>16:00 - 17:50</option>
 															<option>19:00 - 20:50</option>
 														</select>
+
 														<select class="movie_name">
 															<option>영화제목</option>
 															<option>보스 베이비2</option>
@@ -62,16 +59,10 @@
 														<select class="movie_people">
 															<option>인원</option>
 															<option>1 명</option>
-															<option>2 명 </option>
+															<option>2 명</option>
 															<option>3 명</option>
 															<option>4 명</option>
-															<!-- <option>오페라의 유령</option>
-															<option>굿윌헌팅</option>
-															<option>신비한 동물사전</option>
-															<option>말레나</option>
-															<option>미녀와 야수</option>
-															<option>주토피아</option>
-															<option>겨울왕국</option> -->
+													
 									
 														</select>
 												   
@@ -242,8 +233,18 @@
 								</article>  
 							
 							</section>
+
+
+
+
+
+
+ </script>
+
+
+
 						</div>
 
-						<script src="modal.js"></script>
+						<script src="./js/modal.js"></script>
 					
  

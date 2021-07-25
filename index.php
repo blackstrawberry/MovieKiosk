@@ -85,7 +85,7 @@
 						<div class="inner"> -->
 							<header>
 								<h1 style="color:white"><br />Movie reservation System.</h1>
-								<p style="color:white">please use a comfortable machine</p>
+								<!-- <p style="color:white">please use a comfortable machine</p> -->
 							</header>
 						<!-- </div>
 					</div>
@@ -100,7 +100,7 @@
 									<span class="image">
 										<img src="images/pic01.jpg" />
 									</span>
-									<a onclick="next_page1(); paintTodo(3);">
+									<a onclick="next_page1();">
 										<h2>보스 베이비2</h2>
 										<div class="content">
 											<p>애니매이션 (전체이용가)</p>
