@@ -14,22 +14,23 @@
         <img class="logo" src="./img/cgv.png">
     </div>
     <div id="page1" class="con2">
-        <div class="im">
-
             <table>
                 <th>
-                    <figure class="text"><img src="./img/pngegg.png" onclick="next_page();"><br>예매</figure>
+                    <div>
+                    <figure class="text" style="margin-right: 20%; margin-top: 10%; margin-left: 20%"><img src="./img/ticket1.png" onclick="next_page();"><br>예매</figure>
+                    </div>
                 </th>
                 <th>
-                    <figure class="text"><img src="./img/pngegg.png" style="margin-left: 20%;" onclick="hakken_page();" id="imgg"><br>발권</figure>
+                    <div>
+                    <figure class="text" style="margin-right: 20%; margin-top: 10%; margin-left: 25%"><img src="./img/pngegg.png" style="margin-left: 20%;" onclick="hakken_page();" id="imgg"><br>발권</figure>
+                    </div>
                 </th>
             </table>
-        </div>
     </div>
     <div class="ft">
         <div id="back_btn">
             <div style="text-align: center; padding-top: 2%;">
-                <a href="test1.php" onclick="back_page();" id="qq" class="button">뒤로가기</a>
+                <a href="index.php" onclick="back_page();" id="qq" class="button">뒤로가기</a>
             </div>
         </div>
 
