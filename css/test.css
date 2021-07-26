@@ -1,0 +1,44 @@
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#site-header, #site-footer {
+  background: #fff;
+}
+
+#site-footer {
+  margin: 30px 0 0 0;
+}
+
+#site-footer {
+  padding: 40px;
+}
+
+#site-footer h1 {
+  background: #fcfcfc;
+  border: 1px solid #ccc;
+  border-style: none none solid none;
+  font-size: 28px;
+  font-weight: 300;
+  margin: -50px 0 7px -40px;
+
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+

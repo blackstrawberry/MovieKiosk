@@ -81,9 +81,10 @@ body {
 #sidebar{
 	float:left;
 	background:#fff;
+	
 	width:275px;	
 	padding:13px 0 0 45px;
-	height:1400px;
+	height:450px;
 	border-right:1px solid #eee;
 }
 #sidebar h3{
