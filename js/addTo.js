@@ -222,17 +222,18 @@ $(document).ready(function(){
 	});
 	let totalPrice = 0;
 	let selectItem = {};
+	let num = 0;
 	$('.add_to_cart').click(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
 		var productImage = $(productCard).find('img').get(0).src;
 		var productName = $(productCard).find('.product_name').get(0).innerHTML;
 		let productPrice = 	$(productCard).find('.product_price').get(0).innerHTML;
-		selectItem[productName] = productPrice;
+		selectItem[num++] = [productName,productPrice];
 		totalPrice = 0;
 		for(i in selectItem){
-			console.log(Number(selectItem[i].replace("원","")));
-			totalPrice += Number(selectItem[i].replace("원",""));
+			console.log(Number(selectItem[i][1].replace("원","")));
+			totalPrice += Number(selectItem[i][1].replace("원",""));
 		}
 		console.log(selectItem);
 
@@ -247,29 +248,30 @@ $(document).ready(function(){
 			$("body").removeClass("MakeFloatingCart");
 
 
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>"+productPrice+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
+			var cartItem = "<div class='cart-item'><div class='empty'>"+(num-1)+"</div><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>"+productPrice+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
 			let basket = "<div class='basket'>Total: "+totalPrice+"원 </div>";
 
-			$("#cart .empty").hide();
+			// $("#cart .empty").hide();
 			$("#cart .basket").hide();
 			
 			$("#cart").append(cartItem);
 			$("#cart").append(basket);
+			$("#cart .empty").hide();
 			$("#checkout").fadeIn(500);
 			
 			$("#cart .cart-item").last()
 				.addClass("flash")
 				.find(".delete-item").click(function(){
 
-					let iteme = $(this).parent().find('span').get(0).innerHTML;
+					let iteme = $(this).parent().find('.empty').get(0).innerHTML;
 					console.log(iteme);
 					console.log(selectItem[iteme]);
 					delete selectItem[iteme];
 					console.log(selectItem);
 					totalPrice = 0;
 					for(i in selectItem){
-						console.log(Number(selectItem[i].replace("원","")));
-						totalPrice += Number(selectItem[i].replace("원",""));
+						console.log(Number(selectItem[i][1].replace("원","")));
+						totalPrice += Number(selectItem[i][1].replace("원",""));
 					}
 					$("#cart .basket").hide();
 					basket = "<div class='basket'>Total: "+totalPrice+"원 </div>";
