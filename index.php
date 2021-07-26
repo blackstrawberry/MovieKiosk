@@ -20,6 +20,9 @@
     <meta content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
     
     
@@ -44,6 +47,7 @@
 				});
         }
     </script>
+	
 	  <script>
         function next_page2() {
             $(function() {  
@@ -98,7 +102,7 @@
 							<section class="tiles">
 								<article class="style1">
 									<span class="image">
-										<img src="images/pic01.jpg" />
+										<img src="images/보스 베이비2.jpg" alt="보스 베이비2"/>
 									</span>
 									<a onclick="next_page1();">
 										<h2>보스 베이비2</h2>
@@ -110,7 +114,7 @@
 
 								<article class="style2">
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src="images/블랙 위도우.jpg" alt="블랙 위도우" />
 									</span>
 									<a onclick="next_page2();">
 										<h2>블랙 위도우</h2>
@@ -121,7 +125,7 @@
 								</article>
 								<article class="style3">
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src="images/귀멸의칼날 무한열차.jpg" alt="귀멸의칼날 무한열차" />
 									</span>
 									<a onclick="next_page3();">
 										<h2>귀멸의칼날 무한열차</h2>
@@ -132,7 +136,7 @@
 								</article>
 								<article class="style4">
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src="images/은혼 더 파이널.jpg" alt="은혼 더 파이널" />
 									</span>
 									<a onclick="next_page4();">
 										<h2>은혼 더 파이널</h2>
@@ -143,7 +147,7 @@
 								</article>
 								<article class="style5">
 									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
+										<img src="images/정글 크루즈.jpg" alt="정글 크루즈" />
 									</span>
 									<a onclick="next_page5();">
 										<h2>정글 크루즈</h2>

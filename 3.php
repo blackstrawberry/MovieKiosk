@@ -13,12 +13,22 @@
 											<div class="inner_container">
 												<div class="select_movie">
 												
-														<select class="movie_name_place">
-															<option>상영관</option>
-															<option>2 D</option>
-															<option>3 D</option>
-															<option>4 D X</option>
-                                                
+												<select class="movie_name_place" disabled>
+														<!-- <option>상영관</option> -->
+															<option selected>2 D</option>
+															<!-- <option>3 D</option>
+															<option>4 D X</option> -->
+															
+														</select>
+														<select class="movie_name" disabled>
+															<!-- <option>영화제목</option> -->
+															<option selected>블랙 위도우</option>
+															<!-- <option>블랙 위도우</option>
+															<option>귀멸의칼날 무한열차</option>
+															<option>은혼 더 파이널</option>
+															<option>정글 크루즈</option> -->
+														
+										
 														</select>
 														<select class="movie_name_date">
 															<option>날짜</option>
@@ -27,11 +37,10 @@
 															<option>2021.07.26(월)</option>
 															<option>2021.07.27(화)</option>
 															<option>2021.07.28(수)</option>
-															<!-- <option>2021.07.29(목)</option>
-															<option>2021.07.30(목)</option> -->
-
 															
-									
+															
+															
+															
 														</select>
 														<select class="movie_name_time">
 															<option>시간</option>
@@ -42,33 +51,13 @@
 															<option>16:00 - 17:50</option>
 															<option>19:00 - 20:50</option>
 														</select>
-														<select class="movie_name">
-															<option>영화제목</option>
-															<option>보스 베이비2</option>
-															<option>블랙 위도우</option>
-															<option>귀멸의칼날 무한열차</option>
-															<option>은혼 더 파이널</option>
-															<option>정글 크루즈</option>
-															<!-- <option>신비한 동물사전</option>
-															<option>말레나</option>
-															<option>미녀와 야수</option>
-															<option>주토피아</option>
-															<option>겨울왕국</option> -->
-									
-														</select>
 														<select class="movie_people">
 															<option>인원</option>
 															<option>1 명</option>
 															<option>2 명 </option>
 															<option>3 명</option>
 															<option>4 명</option>
-															<!-- <option>오페라의 유령</option>
-															<option>굿윌헌팅</option>
-															<option>신비한 동물사전</option>
-															<option>말레나</option>
-															<option>미녀와 야수</option>
-															<option>주토피아</option>
-															<option>겨울왕국</option> -->
+														
 									
 														</select>
 												   
@@ -81,6 +70,7 @@
 													<div class="seat_reservation">
 														<div class="seat_reservation_left">
 															<div class="screen">SCREEN</div>
+															
 															<div class="seat">
 																
 																<div class="seat_left">
@@ -241,6 +231,6 @@
 							</section>
 						</div>
 
-						<script src="./js/modal1.js"></script>
+						<script src="./js/modal.js"></script>
 					
  

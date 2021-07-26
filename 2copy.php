@@ -7,28 +7,18 @@
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
 				<div>
-					<div>
-						<label for="popup"></label> -->
-						<div class="container">
-							<div class="inner_container">
+				<div>
+				<label for="popup"></label> -->
+				<div class="container">
+											<div class="inner_container">
 												<div class="select_movie">
 												
-													<select class="movie_name_place" disabled>
-														<!-- <option>상영관</option> -->
-															<option selected>2 D</option>
-															<!-- <option>3 D</option>
-															<option>4 D X</option> -->
-															
-														</select>
-														<select class="movie_name" disabled>
-															<!-- <option>영화제목</option> -->
-															<option selected>보스 베이비2</option>
-															<!-- <option>블랙 위도우</option>
-															<option>귀멸의칼날 무한열차</option>
-															<option>은혼 더 파이널</option>
-															<option>정글 크루즈</option> -->
-														
-										
+														<select class="movie_name_place">
+															<option>상영관</option>
+															<option>2 D</option>
+															<option>3 D</option>
+															<option>4 D X</option>
+                                                
 														</select>
 														<select class="movie_name_date">
 															<option>날짜</option>
@@ -37,10 +27,11 @@
 															<option>2021.07.26(월)</option>
 															<option>2021.07.27(화)</option>
 															<option>2021.07.28(수)</option>
+															<!-- <option>2021.07.29(목)</option>
+															<option>2021.07.30(목)</option> -->
+
 															
-															
-															
-															
+									
 														</select>
 														<select class="movie_name_time">
 															<option>시간</option>
@@ -50,6 +41,16 @@
 															<option>13:30 - 15:20</option>
 															<option>16:00 - 17:50</option>
 															<option>19:00 - 20:50</option>
+														</select>
+														<select class="movie_name">
+															<option>영화제목</option>
+															<option>보스 베이비2</option>
+															<option>블랙 위도우</option>
+															<option>귀멸의칼날 무한열차</option>
+															<option>은혼 더 파이널</option>
+															<option>정글 크루즈</option>
+														
+									
 														</select>
 														<select class="movie_people">
 															<option>인원</option>
@@ -69,69 +70,40 @@
 													
 													<div class="seat_reservation">
 														<div class="seat_reservation_left">
-															<div class="screen">SCREEN</div>	
-															<!-- <div class="seat">
+															<div class="screen">SCREEN</div>
 															
-                      	  									<div class="chair" id="A">A</div>
-															<div class="chair" id="B">B</div>
-															<div class="chair" id="C">C</div>
-															<div class="chair" id="D">D</div>
-															<div class="chair" id="E">E</div>
-															<div class="chair" id="F">F</div>
-															<div class="chair" id="G">G</div>
-															<div class="chair" id="H">H</div>
-															<div class="chair" id="I">I</div>
-															<div class="chair" id="J">J</div>
-															<div class="chair" id="K">K</div>
-															<div class="chair" id="L">L</div>
-															<div class="chair" id="M">M</div>
-															<div class="chair" id="N">N</div>
-															<div class="chair" id="O">O</div>
-															<div class="chair" id="P">P</div>
-															<div class="chair" id="Q">Q</div>
-															<div class="chair" id="R">R</div>
-															<div class="chair" id="S">S</div>
-															<div class="chair" id="T">T</div>
-															<div class="chair" id="U">U</div>
-															<div class="chair" id="V">V</div>
-															<div class="chair" id="W">W</div>
-															<div class="chair" id="X">X</div>
-															<div class="chair" id="Y">Y</div>
-                    										</div> -->
-
 															<div class="seat">
 																
 															
 																<div class="seat_left">
 																	<table class="seat_chair">
 																		<tr>
-																			<td class="chair" value="a1">a1</td>
-																			<td class="chair" value="a2">a2</td>
+																			<td>a1</td>
+																			<td>a2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="b1">b1</td>
-																			<td class="chair" value="b2">b2</td>
+																			<td>b1</td>
+																			<td>b2</td>
 																		</tr>
 																		<tr>
-																			
-																			<td class="chair" value="c1">c1</td>
-																			<td class="chair" value="c2">c2</td>
+																			<td>c1</td>
+																			<td>c2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="d1">d1</td>
-																			<td class="chair" value="d2">d2</td>
+																			<td>d1</td>
+																			<td>d2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="e1">e1</td>
-																			<td class="chair" value="e2">e2</td>
+																			<td>e1</td>
+																			<td>e2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="f1">f1</td>
-																			<td class="chair" value="f2">f2</td>
+																			<td>f1</td>
+																			<td>f2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="g1">g1</td>
-																			<td class="chair" value="g2">g2</td>
+																			<td>g1</td>
+																			<td>g2</td>
 																		</tr>
 									
 																	</table>
@@ -140,46 +112,46 @@
 																<div class="seat_middle">
 																	<table class="seat_chair_middle">
 																		<tr>
-																			<td class="chair" value="a3">a3</td>
-																			<td class="chair" value="a4">a4</td>
-																			<td class="chair" value="a5">a5</td>
-																			<td class="chair" value="a6">a6</td>
+																			<td>a3</td>
+																			<td>a4</td>
+																			<td>a5</td>
+																			<td>a6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="b3">b3</td>
-																			<td class="chair" value="b4">b4</td>
-																			<td class="chair" value="b5">b5</td>
-																			<td class="chair" value="b6">b6</td>
+																			<td>b3</td>
+																			<td>b4</td>
+																			<td>b5</td>
+																			<td>b6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="c3">c3</td>
-																			<td class="chair" value="c4">c4</td>
-																			<td class="chair" value="c5">c5</td>
-																			<td class="chair" value="c6">c6</td>
+																			<td>c3</td>
+																			<td>c4</td>
+																			<td>c5</td>
+																			<td>c6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="d3">d3</td>
-																			<td class="chair" value="d4">d4</td>
-																			<td class="chair" value="d5">d5</td>
-																			<td class="chair" value="d6">d6</td>
+																			<td>d3</td>
+																			<td>d4</td>
+																			<td>d5</td>
+																			<td>d6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="e3">e3</td>
-																			<td class="chair" value="e4">e4</td>
-																			<td class="chair" value="e5">e5</td>
-																			<td class="chair" value="e6">e6</td>
+																			<td>e3</td>
+																			<td>e4</td>
+																			<td>e5</td>
+																			<td>e6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="f3">f3</td>
-																			<td class="chair" value="f4">f4</td>
-																			<td class="chair" value="f5">f5</td>
-																			<td class="chair" value="f6">f6</td>
+																			<td>f3</td>
+																			<td>f4</td>
+																			<td>f5</td>
+																			<td>f6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="g3">g3</td>
-																			<td class="chair" value="g4">g4</td>
-																			<td class="chair" value="g5">g5</td>
-																			<td class="chair" value="g6">g6</td>
+																			<td>g3</td>
+																			<td>g4</td>
+																			<td>g5</td>
+																			<td>g6</td>
 																		</tr>
 									
 																	</table>
@@ -219,7 +191,6 @@
 																	</table>
 																</div>
 															</div>
-
 														</div>
 														<div class="seat_reservation_right">
 															<div class="ticketing">

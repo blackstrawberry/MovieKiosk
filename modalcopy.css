@@ -1,3 +1,92 @@
+
+/* .seats {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
+  
+}
+
+.seat {
+  width: 16%;
+  height: 20px;
+  margin: 10px 1px;
+  color: white;
+  background-color: black;
+  border-top-left-radius : 8px;
+  border-top-right-radius : 8px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+} */
+
+
+/* .container___{
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .screen-container {
+  width: 270px;
+  height: 100px;
+  margin: 20px auto;
+  color: white;
+  background-color: black;
+  transform: perspective(5px) rotateX(-0.2deg);
+  text-align: center;
+  font-weight: bold;
+  line-height: 100px;
+  box-shadow: 0 3px 20px rgb(0 0 0 / 90%);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+} */
+/* 
+.seats {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: auto;
+  
+}
+
+.seat {
+  width: 16%;
+  height: 20px;
+  margin: 10px 1px;
+  color: white;
+  background-color: black;
+  border-top-left-radius : 8px;
+  border-top-right-radius : 8px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+
+.seat:nth-of-type(5n+1) {
+  margin-right: 15px;
+}
+
+.seat:nth-of-type(5n+5) {
+  margin-left: 15px;
+}
+
+.selected {
+  background-color: rgb(250, 212, 0);
+  color:black;
+}
+
+.occupied {
+  background-color: white;
+  color: black;
+}
+ */
+
+
+
 * { box-sizing: border-box }
 .hide { display: none }
 
@@ -23,13 +112,13 @@ html {
   height: 100%;
   
 } */
-.container___ {
+/* .container___ {
   width: 75%;
   margin: 0 auto;
 }
 .container___ > p {
   line-height: 1.6;
-}
+} */
 
 .modal {
   position: fixed;
@@ -260,7 +349,7 @@ html {
     width:100%;
 
 }
-.selected{
+ .selected{
     width:35px;
     background-color:darkred;
 }
@@ -270,18 +359,21 @@ html {
 }
 .empty{
     width:35px;
-    background-color: pink;
-}
-.screen{
+    background-color:black;
+} 
+ .screen{
     width:100%;
-    height:30%;
-    background-color:gainsboro;
+    height:20%;
+    border: 5px solid black;
+    background-color:rgb(68, 20, 158);
+    color:#EAED0E;
+    font-family: bold;
     margin:0 auto;
     text-align: center;
-    font-size: 45px;
+    font-size: 30px;
     border-radius: 20px;
-}
-.seat{
+} 
+.seat_{
     width:100%;
     height:84%;
    
@@ -303,6 +395,7 @@ html {
     margin:13px 36px;
 }
 .seat_right{
+  
     width:20%;
     height:90%;
     
@@ -310,19 +403,35 @@ html {
     margin:13px 0px;
 }
 .seat_chair{
+  margin-top:-15px;
+  font-size:16px;
     width:75px;
     height: 230px;
     
-}
+} 
+
+ /* .seat_chair{
+    width:75px;
+    height: 100px;
+    
+}  */
+
 .seat_chair_middle{
+  margin-top:-15px;
+  margin-left:-10px;
+  font-size:16px;
     width:143px;
     height: 230px;
     
     
 }
 .seat_chair > tr,td{
-    border:7px solid white;
+    border:7px solid rgb(98, 93, 93);
     background-color:pink;
+   
+} */
+td{
+  size:0.5px;
 }
 
 .total_price_a{
