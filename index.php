@@ -13,7 +13,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<link rel="stylesheet" href="modalcopy.css" />
-	 <link rel="stylesheet" href="./css/modal.css" />
+	  <link rel="stylesheet" href="./css/modal.css" /> 
 	 <link rel="stylesheet" href="./css/tool.css" />
 
 

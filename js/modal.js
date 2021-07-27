@@ -12,7 +12,10 @@ const targetPeople = document.querySelector(".movie_people");
 // const totalB = document.querySelector(".total_price_b");
 const ticketing = document.querySelector(".ticketing");
 
-var modal = document.getElementsByClassName("modal")[0];
+var modal = document.getElementsByClassName("res-modal")[0];
+
+var alertmodal = document.getElementsByClassName("alertmodal")[0];
+
 
 var array = [];
 var objSeats = [];
@@ -86,6 +89,7 @@ function checkSeatList() {
                 console.log(objSeats[i]);
             }
         }
+       
     // }
 }
 
@@ -141,11 +145,11 @@ seatColor.addEventListener('click', (e) => {
         console.log(countSeat);
 
 
-        // var modal = document.getElementsByClassName("modal")[0];
+        
 
-        // if(countSeat>4){
-        //     modal.style.display = "block";
-        // }
+         if(countSeat>4){
+           alertmodal.style.display = "block";
+         }
           
 
     }else if (e.target.style.backgroundColor != "black") {
@@ -155,9 +159,9 @@ seatColor.addEventListener('click', (e) => {
         seatPrice -= 6000;
         console.log(countSeat);
 
-        // if(countSeat<4){
-        //     modal.style.display = "none";
-        // }
+         if(countSeat<4){
+            alertmodal.style.display = "none";
+         }
     }
 
   
@@ -171,7 +175,7 @@ seatColor.addEventListener('click', (e) => {
 // 예매시 상영관, 날짜, 시간, 영화제목, 인원, 좌석 모두 입력이 되지 않으면 넘어가지 않도록 하는 함수
 // 첫 클릭때 잘 선택한 뒤 예매버튼을 누르고나서 값들을 변경했을때도 오류메시지 출력 
 ticketing.addEventListener('click', function () {
-
+      
     
         let targetDateString = targetDate.options[targetDate.selectedIndex].text;
         console.log("선택한 string:" + targetDateString);
@@ -198,9 +202,10 @@ ticketing.addEventListener('click', function () {
     }
     else {
         if(countSeat==1){
+            
             alert("1명 손님이십니다");
             checkSeatList();
-            
+            modal.style.display = "block";
             var allarray = array.concat(objSeats);
 
             alert(`${allarray}
@@ -208,7 +213,9 @@ ticketing.addEventListener('click', function () {
             
         }
         else if(countSeat==2){
+            
             alert("2명 손님이십니다");
+            modal.style.display = "block";
             checkSeatList();
 
             var allarray = array.concat(objSeats);
@@ -224,7 +231,9 @@ ticketing.addEventListener('click', function () {
 
         }
         else if(countSeat==3){
+           
             alert("3명 손님이십니다");
+             modal.style.display = "block";
             checkSeatList();
 
             var allarray = array.concat(objSeats);
@@ -235,7 +244,9 @@ ticketing.addEventListener('click', function () {
         }
         else if(countSeat==4)
         {
+            
             alert("4명 손님이십니다");
+             modal.style.display = "block";
             checkSeatList();
 
             var allarray = array.concat(objSeats);

@@ -1,21 +1,39 @@
 
-	<!-- <div class="modal" id="popup">
-								<label for="popup"></label>
-								<div>
-									<div>
-										<label for="popup"></label>
-									</div>
-									<label for="popup"></label>
-								</div>
-							</div> -->
+<!-- 모달창 예매버튼 클릭시 나타나도록 구현 -->
 
 <div id="open-modal" class="modal-window">
-    <div>
+    <div id="main">
 		<label for="open-modal"></label>
-		<img src="./images/snack.png" style="height:300px;">
+		<img src="./images/snack.png" style="width:200px;">
 		<h2>스낵류를 드시겠습니까?</h2>
       <a href="#" title="Close" class="modal-close">Close</a> 
         <!-- modal -->
+
+       <div class="card">
+           
+             <div class="text">
+               <div class="title" style="margin-top:80px; margin-left:10px;" >
+                 <h3>예(스낵창)/아니요(결제창)</h4>
+               </div>
+            
+             </div>
+     
+             <div class="buttons">
+				<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
+               <div class="button" onclick="">예</div>
+               <div class="button" onclick="">아니요</div>
+             </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- <div id="alert-modal" class="alertmodal">
+    <div>
+		<label for="open-modal"></label>
+	
+		<h2>한 번에 4명이상 예약을 불가합니다</h2>
+      <a href="#" title="Close" class="modal-close">Close</a> 
+        
 
        <div class="card">
            
@@ -25,25 +43,22 @@
 				 아니요(결제창으로이동)
                </div>
             
+             </div> -->
+     	<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
+              <!-- <div class="buttons">
+			
+               <div class="button" onclick="">예</div>
+               <div class="button" onclick="">아니요</div>
              </div>
-     
-             <div class="buttons">
-
-               <div  class="button" OnClick="">예</div>
-               <div class="button button-primary">아니요</div>
-             </div>
-           </div>
-          
-        
-
-
+           </div> 
       </div>
-  </div>
+  </div> --> 
+
 
 
             <div id="CM">
 				<div>
-					<h2 style="color:white; margin-top:-40px;">상영관부터 순서대로 클릭해주세요!</h2>
+					<h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
 				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
@@ -238,7 +253,9 @@
 														<div class="seat_reservation_right">
 
 															<div class="ticketing" id="checkout">
-														<a href="#open-modal"><input type="submit" name="submit" value="예매"    />	</a>
+													 <a href="#open-modal">
+															<input type="submit" name="submit" value="예매"    />	
+														<!-- </a> -->
 														</div>
 															<div class="color_explanation">
 																<table>
