@@ -11,6 +11,9 @@ const targetPeople = document.querySelector(".movie_people");
 // const totalA = document.querySelector(".total_price_a");
 // const totalB = document.querySelector(".total_price_b");
 const ticketing = document.querySelector(".ticketing");
+
+var modal = document.getElementsByClassName("modal")[0];
+
 var array = [];
 var objSeats = [];
 
@@ -123,7 +126,10 @@ function checkSeatList() {
 // 그리고 상영관의 종류에 따라 영화가격의 값을 변동 시켰음 2d = 6000, 3d = 8000, 4dx = 12000 
 // 비슷한 종류의 if문이 많아서 코드가 상당히 길어짐 
 
-
+// function loadModal(){
+//     modal.style.display = "none";
+// }
+//     loadModal();
 
 seatColor.addEventListener('click', (e) => {
 
@@ -134,17 +140,27 @@ seatColor.addEventListener('click', (e) => {
         seatPrice += 6000;
         console.log(countSeat);
 
-    }else if (e.target.style.backgroundColor != "pink") {
-        e.target.style.backgroundColor = "pink";
+
+        // var modal = document.getElementsByClassName("modal")[0];
+
+        // if(countSeat>4){
+        //     modal.style.display = "block";
+        // }
+          
+
+    }else if (e.target.style.backgroundColor != "black") {
+        e.target.style.backgroundColor = "black";
         
         countSeat--;
         seatPrice -= 6000;
         console.log(countSeat);
+
+        // if(countSeat<4){
+        //     modal.style.display = "none";
+        // }
     }
 
-    if (countSeat > 3) {
-            return;
-    }
+  
 
 }
 );

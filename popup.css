@@ -1,12 +1,8 @@
-#CM{
-    margin-top:50px;
-    margin-left:50px;
-}
 
-input[id*="popup"]{
+/* input[id*="popup"]{
     display:none;
-}
-
+} */
+/* 
 input[id*="popup"] + label{
     display:inline-block; 
     padding:100px;
@@ -16,9 +12,9 @@ input[id*="popup"] + label{
    
     background:#848484;
     /* color:#fff; */
-}
+} */
 
-input[id*="popup"] + label + div{
+input[id*="open-modal"] + label + div{
     opacity: 0; visibility: hidden; transition: all 1s;
    position:fixed;
    top:0;
@@ -28,12 +24,12 @@ input[id*="popup"] + label + div{
    z-index: 100;
 }
 
-input[id*="popup"]:checked + label + div{
+input[id*="open-modal"]:checked + label + div{
     opacity: 3; visibility: visible;
 }
 
 
-input[id*="popup"] + label + div > div{
+input[id*="open-modal"] + label + div > div{
     position:absolute;
     top:50%;
     left:50%;
@@ -44,7 +40,7 @@ input[id*="popup"] + label + div > div{
     z-index:2;
  }
 
- input[id*="popup"] + label + div > div > label{
+ input[id*="open-modal"] + label + div > div > label{
     position:absolute;
     top:0%;
     right:0%;
@@ -55,7 +51,7 @@ input[id*="popup"] + label + div > div{
     z-index:1;
  }
  
- input[id*="popup"] + label + div >  label{
+ input[id*="open-modal"] + label + div >  label{
     position:absolute;
     top:0%;
     left:0%;

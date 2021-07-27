@@ -1,3 +1,19 @@
+
+
+/* input[id*="popup"]{
+    display:none;
+} */
+/* 
+input[id*="popup"] + label{
+    display:inline-block; 
+    padding:100px;
+    width: 413px;
+    height: 230px;
+    text-align: center; 
+   
+    background:#848484;
+    /* color:#fff; */
+
 .modal-window {
   position: fixed;
   /* background-color: rgba(255, 255, 255, 0.25); */
@@ -20,6 +36,7 @@
 }
 
 
+
 /* ///////////////////////////////////////////////// */
 .modal-window > div {    
   
@@ -29,6 +46,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  background-color: yellow;
   /* border: 3px solid; */
 
   /* padding: 9em; */

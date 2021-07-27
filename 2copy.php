@@ -1,3 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="stylesheet" href="modalcopy.css" />
+	 <link rel="stylesheet" href="./css/modal.css" />
+	 <link rel="stylesheet" href="./css/tool.css" />
+
+
+		
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<!-- <div class="modal" id="popup">
+								<label for="popup"></label>
+								<div>
+									<div>
+										<label for="popup"></label>
+									</div>
+									<label for="popup"></label>
+								</div>
+							</div> -->
+<body>
+							<div id="open-modal" class="modal-window">
+    <div>
+		<label for="open-modal"></label>
+      <a href="#" title="Close" class="modal-close">Close</a> -->
+        <!-- modal -->
+
+       <div class="card">
+           
+             <div class="text">
+               <div class="title">
+                 확인 버튼을 누르면 결제가 완료됩니다
+               </div>
+            
+             </div>
+     
+             <div class="buttons">
+
+               <div  class="button" OnClick="location.href ='index.html'">취소</div>
+               <div class="button button-primary">확인</div>
+             </div>
+           </div>
+          
+        
+
+
+      </div>
+  </div>
 
 
             <div id="CM">
@@ -7,18 +69,28 @@
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
 				<div>
-				<div>
-				<label for="popup"></label> -->
-				<div class="container">
-											<div class="inner_container">
+					<div>
+						<label for="popup"></label> -->
+						<div class="container">
+							<div class="inner_container">
 												<div class="select_movie">
 												
-														<select class="movie_name_place">
-															<option>상영관</option>
-															<option>2 D</option>
-															<option>3 D</option>
-															<option>4 D X</option>
-                                                
+													<select class="movie_name_place" >
+														<!-- <option>상영관</option> -->
+															<option selected>2 D</option>
+															<!-- <option>3 D</option>
+															<option>4 D X</option> -->
+															
+														</select>
+														<select class="movie_name" >
+															<!-- <option>영화제목</option> -->
+															<option selected>보스 베이비2</option>
+															<!-- <option>블랙 위도우</option>
+															<option>귀멸의칼날 무한열차</option>
+															<option>은혼 더 파이널</option>
+															<option>정글 크루즈</option> -->
+														
+										
 														</select>
 														<select class="movie_name_date">
 															<option>날짜</option>
@@ -27,11 +99,10 @@
 															<option>2021.07.26(월)</option>
 															<option>2021.07.27(화)</option>
 															<option>2021.07.28(수)</option>
-															<!-- <option>2021.07.29(목)</option>
-															<option>2021.07.30(목)</option> -->
-
 															
-									
+															
+															
+															
 														</select>
 														<select class="movie_name_time">
 															<option>시간</option>
@@ -42,17 +113,7 @@
 															<option>16:00 - 17:50</option>
 															<option>19:00 - 20:50</option>
 														</select>
-														<select class="movie_name">
-															<option>영화제목</option>
-															<option>보스 베이비2</option>
-															<option>블랙 위도우</option>
-															<option>귀멸의칼날 무한열차</option>
-															<option>은혼 더 파이널</option>
-															<option>정글 크루즈</option>
-														
-									
-														</select>
-														<select class="movie_people">
+														<!-- <select class="movie_people">
 															<option>인원</option>
 															<option>1 명</option>
 															<option>2 명 </option>
@@ -60,9 +121,10 @@
 															<option>4 명</option>
 														
 									
-														</select>
+														</select> -->
 												   
 												</div>
+								
 												<div class="poster">
 									
 												</div>
@@ -70,40 +132,41 @@
 													
 													<div class="seat_reservation">
 														<div class="seat_reservation_left">
-															<div class="screen">SCREEN</div>
-															
+															<div class="screen">SCREEN</div>	
+														
 															<div class="seat">
 																
 															
 																<div class="seat_left">
 																	<table class="seat_chair">
 																		<tr>
-																			<td>a1</td>
-																			<td>a2</td>
+																			<td class="chair" id="a1">A1</td>
+																			<td class="chair" id="a2">A2</td>
 																		</tr>
 																		<tr>
-																			<td>b1</td>
-																			<td>b2</td>
+																			<td class="chair" id="b1">B1</td>
+																			<td class="chair" id="b2">B2</td>
 																		</tr>
 																		<tr>
-																			<td>c1</td>
-																			<td>c2</td>
+																			
+																			<td class="chair" id="c1">C1</td>
+																			<td class="chair" id="c2">C2</td>
 																		</tr>
 																		<tr>
-																			<td>d1</td>
-																			<td>d2</td>
+																			<td class="chair" id="d1">D1</td>
+																			<td class="chair" id="d2">D2</td>
 																		</tr>
 																		<tr>
-																			<td>e1</td>
-																			<td>e2</td>
+																			<td class="chair" id="e1">E1</td>
+																			<td class="chair" id="e2">E2</td>
 																		</tr>
 																		<tr>
-																			<td>f1</td>
-																			<td>f2</td>
+																			<td class="chair" id="f1">F1</td>
+																			<td class="chair" id="f2">F2</td>
 																		</tr>
 																		<tr>
-																			<td>g1</td>
-																			<td>g2</td>
+																			<td class="chair" id="g1">G1</td>
+																			<td class="chair" id="g2">G2</td>
 																		</tr>
 									
 																	</table>
@@ -112,108 +175,112 @@
 																<div class="seat_middle">
 																	<table class="seat_chair_middle">
 																		<tr>
-																			<td>a3</td>
-																			<td>a4</td>
-																			<td>a5</td>
-																			<td>a6</td>
+																			<td class="chair" id="a3">A3</td>
+																			<td class="chair" id="a4">A4</td>
+																			<td class="chair" id="a5">A5</td>
+																			<td class="chair" id="a6">A6</td>
 																		</tr>
 																		<tr>
-																			<td>b3</td>
-																			<td>b4</td>
-																			<td>b5</td>
-																			<td>b6</td>
+																			<td class="chair" id="b3">B3</td>
+																			<td class="chair" id="b4">B4</td>
+																			<td class="chair" id="b5">B5</td>
+																			<td class="chair" id="b6">B6</td>
 																		</tr>
 																		<tr>
-																			<td>c3</td>
-																			<td>c4</td>
-																			<td>c5</td>
-																			<td>c6</td>
+																			<td class="chair" id="c3">C3</td>
+																			<td class="chair" id="c4">C4</td>
+																			<td class="chair" id="c5">C5</td>
+																			<td class="chair" id="c6">C6</td>
 																		</tr>
 																		<tr>
-																			<td>d3</td>
-																			<td>d4</td>
-																			<td>d5</td>
-																			<td>d6</td>
+																			<td class="chair" id="d3">D3</td>
+																			<td class="chair" id="d4">D4</td>
+																			<td class="chair" id="d5">D5</td>
+																			<td class="chair" id="d6">D6</td>
 																		</tr>
 																		<tr>
-																			<td>e3</td>
-																			<td>e4</td>
-																			<td>e5</td>
-																			<td>e6</td>
+																			<td class="chair" id="e3">E3</td>
+																			<td class="chair" id="e4">E4</td>
+																			<td class="chair" id="e5">E5</td>
+																			<td class="chair" id="e6">E6</td>
 																		</tr>
 																		<tr>
-																			<td>f3</td>
-																			<td>f4</td>
-																			<td>f5</td>
-																			<td>f6</td>
+																			<td class="chair" id="f3">F3</td>
+																			<td class="chair" id="f4">F4</td>
+																			<td class="chair" id="f5">F5</td>
+																			<td class="chair" id="f6">F6</td>
 																		</tr>
 																		<tr>
-																			<td>g3</td>
-																			<td>g4</td>
-																			<td>g5</td>
-																			<td>g6</td>
+																			<td class="chair" id="g3">G3</td>
+																			<td class="chair" id="g4">G4</td>
+																			<td class="chair" id="g5">G5</td>
+																			<td class="chair" id="g6">G6</td>
 																		</tr>
 									
 																	</table>
 									
 																</div>
 																<div class="seat_right">
-																	<table class="seat_chair">
+																	<table class="seat_chair_right">
 																		<tr>
-																			<td>a7</td>
-																			<td>a8</td>
+																			<td class="chair" id="a7">A7</td>
+																			<td class="chair" id="a8">A8</td>
 																		</tr>
 																		<tr>
-																			<td>b7</td>
-																			<td>b8</td>
+																			<td class="chair" id="b7">B7</td>
+																			<td class="chair" id="b8">B8</td>
 																		</tr>
 																		<tr>
-																			<td>c7</td>
-																			<td>c8</td>
+																			<td class="chair" id="c7">C7</td>
+																			<td class="chair" id="c8">C8</td>
 																		</tr>
 																		<tr>
-																			<td>d7</td>
-																			<td>d8</td>
+																			<td class="chair" id="d7">D7</td>
+																			<td class="chair" id="d8">D8</td>
 																		</tr>
 																		<tr>
-																			<td>e7</td>
-																			<td>e8</td>
+																			<td class="chair" id="e7">E7</td>
+																			<td class="chair" id="e8">E8</td>
 																		</tr>
 																		<tr>
-																			<td>f7</td>
-																			<td>f8</td>
+																			<td class="chair" id="f7">F7</td>
+																			<td class="chair" id="f8">F8</td>
 																		</tr>
 																		<tr>
-																			<td>g7</td>
-																			<td>g8</td>
+																			<td class="chair" id="g7">G7</td>
+																			<td class="chair" id="g8">G8</td>
 																		</tr>
 									
 																	</table>
 																</div>
 															</div>
+
 														</div>
 														<div class="seat_reservation_right">
-															<div class="ticketing">
-																<input type="submit" name="submit" value="예매"    />
-															</div>
+
+															<div class="ticketing" id="checkout">
+														<a href="#open-modal"><input type="submit" name="submit" value="예매"    />	</a>
+														</div>
 															<div class="color_explanation">
 																<table>
 																	<tr>
-																		<td class="selected"></td>
-																		<td>선택</td>
+																		<!-- 좌석값과 안겹치게 하려고 ___ 추가 -->
+																		<td class="selected___"></td>
+																		<td style="color:#EAED0E;">선택</td>
 																	</tr>
 																	<tr>
-																		<td class="reserved"></td>
-																		<td>예약완료</td>
+																		<!-- 예약 좌석값과 안겹치게 하려고 ___ 추가 -->
+																		<td class="reserved___"></td>
+																		<td style="color:#EAED0E;">예약</td>
 																	</tr>
 																	<tr>
 																		<td class="empty"></td>
-																		<td>예약가능</td>
+																		<td style="color:#EAED0E;">가능</td>
 																	</tr>
 																</table>
 															</div>
 														</div>
-													</div>
+													<!-- </div>
 												  
 														<div class="total_price_a">
 														
@@ -221,7 +288,7 @@
 														<div class="total_price_b">
 															
 														</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -231,8 +298,16 @@
 								</article>  
 							
 							</section>
+						
+			
+							<div>
+
+                      </div>
+                </div>
+
 						</div>
 
 						<script src="./js/modal.js"></script>
+</body>
 					
  
