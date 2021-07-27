@@ -8,4 +8,5 @@
     $pw = "sunmoons1s2s3!";
     $dbName = "w1004mesmg";
     $conn= mysqli_connect($host, $user, $pw, $dbName);
+    
 ?>
