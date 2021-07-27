@@ -1,4 +1,160 @@
 
+/* 모달 전체부분 */
+#main{
+  background-color: rgb(243, 241, 146);
+  width:800px;
+}
+/* 모달 중간 흰띄 부분 */
+.card {
+  align-items: center;
+  background-color: rgb(195, 251, 190);
+  border-radius: 40px;
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  
+  flex-direction: column;
+    display: flex;
+  
+  position: relative; 
+  /* width: 336px; */
+}
+
+/* 모달 버튼 부분 */
+.buttons {
+  display: flex;
+  margin-top: 8px;
+  width: 90%;
+}
+.button {
+  align-items: center;
+  background: #edf1f7;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-bottom:30px;
+
+  /* margin: 0 5px 28px 20px; */
+  width: 100%;
+}
+
+/*  두번째 모달  */
+#main1{
+  background-color: rgb(243, 241, 146);
+  width:800px;
+}
+
+
+
+/* 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(https://goo.gl/OeVhun) center no-repeat;
+  background-size: cover;
+}
+
+.blur-it {
+  filter: blur(4px);
+}
+
+a.btn {
+  width: 200px;
+  padding: 18px 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0;
+  background: #e2525c;
+}
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(41, 171, 164, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 50% 0 0 -300px;
+  position: relative;
+  top: 50%; 
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+}
+
+.head { 
+  width: 90%;
+  height: 32px;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #e2525c;
+}
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+
+.content {
+  padding: 10%;
+}
+
+.good-job {
+  text-align: center;
+  font-family: 'Montserrat', Arial,       Helvetica, sans-serif;
+  color: #e2525c;
+}
+.good-job .fa-thumbs-o-up {
+  font-size: 60px;
+}
+.good-job h1 {
+  font-size: 45px;
+} */
+
+
+
+
 * { box-sizing: border-box }
 .hide { display: none }
 
@@ -26,6 +182,8 @@ html {
   right: 0;
   background-color: rgb(0 0 0 );
 }
+
+
 /* 
 .modal {
   position: fixed;

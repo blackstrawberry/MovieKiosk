@@ -1,19 +1,39 @@
 
+<!-- <div class="page-wrapper">
+</div>
+
+
+<div class="modal-wrapper">
+  <div class="modal_wrapper">
+    <div class="head">
+      <a class="btn-close trigger" href="#">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="content">
+        <div class="good-job">
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <h1>Good Job!</h1>
+        </div>
+    </div>
+  </div>
+</div> -->
+
 <!-- 모달창 예매버튼 클릭시 나타나도록 구현 -->
 
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
-		<img src="./images/snack.png" style="width:200px;">
-		<h2>스낵류를 드시겠습니까?</h2>
-      <a href="#" title="Close" class="modal-close">Close</a> 
+		<img src="./images/SSSnack.png" style="width:60%;">
+		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
+      <a href="#" title="Close" class="modal-close">x</a> 
         <!-- modal -->
 
        <div class="card">
            
              <div class="text">
-               <div class="title" style="margin-top:80px; margin-left:10px;" >
-                 <h3>예(스낵창)/아니요(결제창)</h4>
+               <div class="title" style="margin-top:80px; margin-left:50px;" >
+                 <h2>예(스낵창) / 아니요(결제창)</h2>
                </div>
             
              </div>
@@ -27,32 +47,18 @@
       </div>
   </div>
 
-  <!-- <div id="alert-modal" class="alertmodal">
-    <div>
+  <div id="open-m" class="modal-w">
+    <div id="main1">
 		<label for="open-modal"></label>
-	
-		<h2>한 번에 4명이상 예약을 불가합니다</h2>
-      <a href="#" title="Close" class="modal-close">Close</a> 
-        
+		<img src="./images/theater.jpg" style="width:70%;">
+		<h2>한 번에 4명 예약은 어렵습니다.</h2>
+      <a href="#" title="Close" class="modal-close">x</a> 
+        <!-- modal -->
 
        <div class="card">
-           
-             <div class="text">
-               <div class="title" style="text-align:center;">
-                 예(스낵창으로이동)<br>
-				 아니요(결제창으로이동)
-               </div>
-            
-             </div> -->
-     	<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
-              <!-- <div class="buttons">
-			
-               <div class="button" onclick="">예</div>
-               <div class="button" onclick="">아니요</div>
-             </div>
-           </div> 
+        </div>
       </div>
-  </div> --> 
+  </div>
 
 
 
@@ -253,9 +259,9 @@
 														<div class="seat_reservation_right">
 
 															<div class="ticketing" id="checkout">
-													 <a href="#open-modal">
-															<input type="submit" name="submit" value="예매"    />	
-														<!-- </a> -->
+													 	<div>
+														<input type="submit" name="submit" value="예매"    />	
+														</div>
 														</div>
 															<div class="color_explanation">
 																<table>

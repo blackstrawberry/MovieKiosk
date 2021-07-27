@@ -13,8 +13,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<link rel="stylesheet" href="modalcopy.css" />
-	 <link rel="stylesheet" href="./css/modal.css" />
-	 <link rel="stylesheet" href="./css/tool.css" />
+	  <link rel="stylesheet" href="./css/modal.css" /> 
+
 
 
 		
@@ -23,48 +23,69 @@
     <meta content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-	<!-- <div class="modal" id="popup">
-								<label for="popup"></label>
-								<div>
-									<div>
-										<label for="popup"></label>
-									</div>
-									<label for="popup"></label>
-								</div>
-							</div> -->
 <body>
-							<div id="open-modal" class="modal-window">
-    <div>
+
+
+<!-- 모달창 예매버튼 클릭시 나타나도록 구현 -->
+
+<div id="open-modal" class="modal-window">
+    <div id="main">
 		<label for="open-modal"></label>
-      <a href="#" title="Close" class="modal-close">Close</a> -->
+		<img src="./images/snack.png" style="width:200px;">
+		<h2>스낵류를 드시겠습니까?</h2>
+      <a href="#" title="Close" class="modal-close">x</a> 
         <!-- modal -->
 
        <div class="card">
            
              <div class="text">
-               <div class="title">
-                 확인 버튼을 누르면 결제가 완료됩니다
+               <div class="title" style="margin-top:80px; margin-left:10px;" >
+                 <h3>예(스낵창)/아니요(결제창)</h4>
                </div>
             
              </div>
      
              <div class="buttons">
-
-               <div  class="button" OnClick="location.href ='index.html'">취소</div>
-               <div class="button button-primary">확인</div>
+				<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
+               <div class="button" onclick="">예</div>
+               <div class="button" onclick="">아니요</div>
              </div>
-           </div>
-          
-        
+        </div>
+      </div>
+  </div>
 
+  <div id="open-modal" class="modal-window">
+    <div id="main1">
+		<label for="open-modal"></label>
+		<img src="./images/snack.png" style="width:200px;">
+		<h2>스낵류를 드시겠습니까?</h2>
+      <a href="#" title="Close" class="modal-close">x</a> 
+        <!-- modal -->
 
+       <div class="card">
+           
+             <div class="text">
+               <div class="title" style="margin-top:80px; margin-left:10px;" >
+                 <h3>예(스낵창)/아니요(결제창)</h4>
+               </div>
+            
+             </div>
+     
+             <div class="buttons">
+				<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
+               <div class="button" onclick="">예</div>
+               <div class="button" onclick="">아니요</div>
+             </div>
+        </div>
       </div>
   </div>
 
 
+
+
             <div id="CM">
 				<div>
-					<h2 style="color:white; margin-top:-40px;">상영관부터 순서대로 클릭해주세요!</h2>
+					<h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
 				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
@@ -259,7 +280,9 @@
 														<div class="seat_reservation_right">
 
 															<div class="ticketing" id="checkout">
-														<a href="#open-modal"><input type="submit" name="submit" value="예매"    />	</a>
+													 <a href="#open-modal">
+															<input type="submit" name="submit" value="예매"    />	
+														<!-- </a> -->
 														</div>
 															<div class="color_explanation">
 																<table>
