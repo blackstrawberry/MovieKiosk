@@ -51,7 +51,7 @@
 															<option>16:00 - 17:50</option>
 															<option>19:00 - 20:50</option>
 														</select>
-														<select class="movie_people">
+														<!-- <select class="movie_people">
 															<option>인원</option>
 															<option>1 명</option>
 															<option>2 명 </option>
@@ -59,7 +59,7 @@
 															<option>4 명</option>
 														
 									
-														</select>
+														</select> -->
 												   
 												</div>
 												<div class="poster">
@@ -105,33 +105,33 @@
 																<div class="seat_left">
 																	<table class="seat_chair">
 																		<tr>
-																			<td class="chair" value="a1">a1</td>
-																			<td class="chair" value="a2">a2</td>
+																			<td class="chair" id="a1">a1</td>
+																			<td class="chair" id="a2">a2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="b1">b1</td>
-																			<td class="chair" value="b2">b2</td>
+																			<td class="chair" id="b1">b1</td>
+																			<td class="chair" id="b2">b2</td>
 																		</tr>
 																		<tr>
 																			
-																			<td class="chair" value="c1">c1</td>
-																			<td class="chair" value="c2">c2</td>
+																			<td class="chair" id="c1">c1</td>
+																			<td class="chair" id="c2">c2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="d1">d1</td>
-																			<td class="chair" value="d2">d2</td>
+																			<td class="chair" id="d1">d1</td>
+																			<td class="chair" id="d2">d2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="e1">e1</td>
-																			<td class="chair" value="e2">e2</td>
+																			<td class="chair" id="e1">e1</td>
+																			<td class="chair" id="e2">e2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="f1">f1</td>
-																			<td class="chair" value="f2">f2</td>
+																			<td class="chair" id="f1">f1</td>
+																			<td class="chair" id="f2">f2</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="g1">g1</td>
-																			<td class="chair" value="g2">g2</td>
+																			<td class="chair" id="g1">g1</td>
+																			<td class="chair" id="g2">g2</td>
 																		</tr>
 									
 																	</table>
@@ -140,46 +140,46 @@
 																<div class="seat_middle">
 																	<table class="seat_chair_middle">
 																		<tr>
-																			<td class="chair" value="a3">a3</td>
-																			<td class="chair" value="a4">a4</td>
-																			<td class="chair" value="a5">a5</td>
-																			<td class="chair" value="a6">a6</td>
+																			<td class="chair" id="a3">a3</td>
+																			<td class="chair" id="a4">a4</td>
+																			<td class="chair" id="a5">a5</td>
+																			<td class="chair" id="a6">a6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="b3">b3</td>
-																			<td class="chair" value="b4">b4</td>
-																			<td class="chair" value="b5">b5</td>
-																			<td class="chair" value="b6">b6</td>
+																			<td class="chair" id="b3">b3</td>
+																			<td class="chair" id="b4">b4</td>
+																			<td class="chair" id="b5">b5</td>
+																			<td class="chair" id="b6">b6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="c3">c3</td>
-																			<td class="chair" value="c4">c4</td>
-																			<td class="chair" value="c5">c5</td>
-																			<td class="chair" value="c6">c6</td>
+																			<td class="chair" id="c3">c3</td>
+																			<td class="chair" id="c4">c4</td>
+																			<td class="chair" id="c5">c5</td>
+																			<td class="chair" id="c6">c6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="d3">d3</td>
-																			<td class="chair" value="d4">d4</td>
-																			<td class="chair" value="d5">d5</td>
-																			<td class="chair" value="d6">d6</td>
+																			<td class="chair" id="d3">d3</td>
+																			<td class="chair" id="d4">d4</td>
+																			<td class="chair" id="d5">d5</td>
+																			<td class="chair" id="d6">d6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="e3">e3</td>
-																			<td class="chair" value="e4">e4</td>
-																			<td class="chair" value="e5">e5</td>
-																			<td class="chair" value="e6">e6</td>
+																			<td class="chair" id="e3">e3</td>
+																			<td class="chair" id="e4">e4</td>
+																			<td class="chair" id="e5">e5</td>
+																			<td class="chair" id="e6">e6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="f3">f3</td>
-																			<td class="chair" value="f4">f4</td>
-																			<td class="chair" value="f5">f5</td>
-																			<td class="chair" value="f6">f6</td>
+																			<td class="chair" id="f3">f3</td>
+																			<td class="chair" id="f4">f4</td>
+																			<td class="chair" id="f5">f5</td>
+																			<td class="chair" id="f6">f6</td>
 																		</tr>
 																		<tr>
-																			<td class="chair" value="g3">g3</td>
-																			<td class="chair" value="g4">g4</td>
-																			<td class="chair" value="g5">g5</td>
-																			<td class="chair" value="g6">g6</td>
+																			<td class="chair" id="g3">g3</td>
+																			<td class="chair" id="g4">g4</td>
+																			<td class="chair" id="g5">g5</td>
+																			<td class="chair" id="g6">g6</td>
 																		</tr>
 									
 																	</table>
@@ -188,32 +188,32 @@
 																<div class="seat_right">
 																	<table class="seat_chair">
 																		<tr>
-																			<td>a7</td>
-																			<td>a8</td>
+																			<td class="chair" id="a7">a7</td>
+																			<td class="chair" id="a8">a8</td>
 																		</tr>
 																		<tr>
-																			<td>b7</td>
-																			<td>b8</td>
+																			<td class="chair" id="b7">b7</td>
+																			<td class="chair" id="b8">b8</td>
 																		</tr>
 																		<tr>
-																			<td>c7</td>
-																			<td>c8</td>
+																			<td class="chair" id="c7">c7</td>
+																			<td class="chair" id="c8">c8</td>
 																		</tr>
 																		<tr>
-																			<td>d7</td>
-																			<td>d8</td>
+																			<td class="chair" id="d7">d7</td>
+																			<td class="chair" id="d8">d8</td>
 																		</tr>
 																		<tr>
-																			<td>e7</td>
-																			<td>e8</td>
+																			<td class="chair" id="e7">e7</td>
+																			<td class="chair" id="e8">e8</td>
 																		</tr>
 																		<tr>
-																			<td>f7</td>
-																			<td>f8</td>
+																			<td class="chair" id="f7">f7</td>
+																			<td class="chair" id="f8">f8</td>
 																		</tr>
 																		<tr>
-																			<td>g7</td>
-																			<td>g8</td>
+																			<td class="chair" id="g7">g7</td>
+																			<td class="chair" id="g8">g8</td>
 																		</tr>
 									
 																	</table>
@@ -228,11 +228,13 @@
 															<div class="color_explanation">
 																<table>
 																	<tr>
-																		<td class="selected"></td>
+																		<!-- 좌석값과 안겹치게 하려고 ___ 추가 -->
+																		<td class="selected___"></td>
 																		<td>선택</td>
 																	</tr>
 																	<tr>
-																		<td class="reserved"></td>
+																		<!-- 예약 좌석값과 안겹치게 하려고 ___ 추가 -->
+																		<td class="reserved___"></td>
 																		<td>예약완료</td>
 																	</tr>
 																	<tr>
@@ -242,7 +244,7 @@
 																</table>
 															</div>
 														</div>
-													</div>
+													<!-- </div>
 												  
 														<div class="total_price_a">
 														
@@ -250,7 +252,7 @@
 														<div class="total_price_b">
 															
 														</div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>

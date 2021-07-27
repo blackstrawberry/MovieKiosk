@@ -11,9 +11,12 @@ const targetPeople = document.querySelector(".movie_people");
 // const totalA = document.querySelector(".total_price_a");
 // const totalB = document.querySelector(".total_price_b");
 const ticketing = document.querySelector(".ticketing");
-const array = [];
+var array = [];
 var objSeats = [];
 
+const reserved = []; 
+
+array[0] = ["2 D"];
 
 // console.log(targetPeople);
 
@@ -23,6 +26,7 @@ let seatPrice = 0;
 paintTodo();
 // poster영역에 이미지 보이게 하는 함수
 function paintTodo() {
+
     let movieChoiceString = movieChoice.options[movieChoice.selectedIndex].text;
     console.log("선택한 string:" + movieChoiceString);
     // totalA.innerText += " " + movieChoiceString;
@@ -31,10 +35,12 @@ function paintTodo() {
     image.src = `images/${movieChoiceString}.jpg`;
     image.classList.add(`poster_img`);
     poster.appendChild(image);
+    array[3] = [movieChoiceString];
 }
 
 seatOnclickEvent();
 checkSeatList();
+
 
 
 //onclick시 이벤트 넣기
@@ -45,20 +51,20 @@ function seatOnclickEvent() {
 
     console.log(seats.length);
 
-    if (countSeat < 4) {
+    // if (countSeat < 4) {
         for (let i = 0; i < seats.length; i++) {
             console.log(countSeat);
             if (!seats[i].classList.contains("reserved")) {
                 seats[i].addEventListener("click", function () {
                     seats[i].classList.toggle("selected");
-                    countSeat++;
+                    // countSeat++;
 
                     //   console.log(reserved);
                     console.log(seats[i]);
                 });
             }
         }
-    }
+    // }
 
 
 }
@@ -67,35 +73,18 @@ function seatOnclickEvent() {
 function checkSeatList() {
     var reserved = document.getElementsByClassName("selected");
     console.log(reserved);
-    if (reserved.length > 5) {
-        alert("최대 4개의 좌석까지 선택 가능합니다");
-    } else {
+    // if (reserved.length > 5) {
+    //     alert("최대 4개의 좌석까지 선택 가능합니다");
+    // } else {
 
         if (reserved.length != 0) {
             for (var i = 0; i < reserved.length; i++) {
                 objSeats[i] = reserved[i].id;
+                console.log(objSeats[i]);
             }
         }
-    }
+    // }
 }
-
-
-// function seatOnclickEvent() {
-//     var seats = document.getElementsByClassName("seat");
-
-//     for (let i = 0; i < seats.length; i++) {
-//       if (!seats[i].classList.contains("occupied")) {
-//         seats[i].addEventListener("click", function () {
-//           seats[i].classList.toggle("selected");
-
-//            console.log(seats[i]);
-//         });
-//       }
-//     }
-//   }
-
-
-
 
 
 //영화 선택하면 포스터 바뀌는 함수
@@ -140,19 +129,21 @@ seatColor.addEventListener('click', (e) => {
 
     if (e.target.style.backgroundColor != "darkred") {
         e.target.style.backgroundColor = "darkred";
-        console.log(countSeat);
+        
         countSeat++;
         seatPrice += 6000;
-
+        console.log(countSeat);
 
     }else if (e.target.style.backgroundColor != "pink") {
         e.target.style.backgroundColor = "pink";
+        
         countSeat--;
         seatPrice -= 6000;
+        console.log(countSeat);
     }
 
-    if (countSeat = 4) {
-
+    if (countSeat > 3) {
+            return;
     }
 
 }
@@ -161,47 +152,86 @@ seatColor.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-// 날짜를 선택했을 경우 해당 값을 콘솔에 출력해주고 어레이에 값을 집어넣어주는 함수 
-targetDate.addEventListener('change', (e) => {
-    array[1] = [];
-    let targetDateString = targetDate.options[targetDate.selectedIndex].text;
-    console.log("선택한 string:" + targetDateString);
-    array[1].push(targetDateString);
-})
-
-// 시간을 선택했을 경우 해당 값을 콘솔에 출력해주고 어레이에 값을 집어넣어주는 함수 
-targetTime.addEventListener('change', (e) => {
-    array[2] = []
-    let targetTimeString = targetTime.options[targetTime.selectedIndex].text;
-    console.log("선택한 string:" + targetTimeString);
-    array[2].push(targetTimeString);
-
-})
-
-
 // 예매시 상영관, 날짜, 시간, 영화제목, 인원, 좌석 모두 입력이 되지 않으면 넘어가지 않도록 하는 함수
 // 첫 클릭때 잘 선택한 뒤 예매버튼을 누르고나서 값들을 변경했을때도 오류메시지 출력 
 ticketing.addEventListener('click', function () {
-    let stringTotalA = array[0] + " " + array[1] + " " + array[2] + " " + array[3] + " " + array[4];
 
-    if (array[0] == undefined || array[1] == undefined || array[2] == undefined || array[3] == undefined || array[4] == undefined || countSeat < 1) {
+    
+        let targetDateString = targetDate.options[targetDate.selectedIndex].text;
+        console.log("선택한 string:" + targetDateString);
+        array[1] = (targetDateString);
+
+    
+        let targetTimeString = targetTime.options[targetTime.selectedIndex].text;
+        console.log("선택한 string:" + targetTimeString);
+        array[2] = (targetTimeString);
+
+
+    let stringTotalA = array[0] + " " + array[1] + " " + array[2] + " " + array[3];
+
+    
+
+    if ( array[1] == undefined || array[2] == undefined ||  countSeat < 1 ||  array[3] == undefined){ 
         alert("선택되지 않은 항목이 있습니다.")
     }
-    else if (array[0] == "상영관" || array[1] == "날짜" || array[2] == "시간" || array[3] == "영화제목" || array[4] == "인원") {
+    else if ( array[1] == "날짜" || array[2] == "시간" ) { // || array[4] == "인원"
         alert("입력받지 못한 예메 정보가 있습니다")
     }
-    // else if(countSeat>4){
-    //     alert("4인이상 예매 불가합니다")
-    // }
+    else if(countSeat>4){
+        alert("4인이상 예매 불가합니다")
+    }
     else {
+        if(countSeat==1){
+            alert("1명 손님이십니다");
+            checkSeatList();
+            
+            var allarray = array.concat(objSeats);
+
+            alert(`${allarray}
+            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+            
+        }
+        else if(countSeat==2){
+            alert("2명 손님이십니다");
+            checkSeatList();
+
+            var allarray = array.concat(objSeats);
+        
+            // 이전 얼럿 
+            // alert(`${stringTotalA}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+
+            
+            alert(`${allarray}
+            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+       
+
+        }
+        else if(countSeat==3){
+            alert("3명 손님이십니다");
+            checkSeatList();
+
+            var allarray = array.concat(objSeats);
+   
+            alert(`${allarray}
+            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+      
+        }
+        else if(countSeat==4)
+        {
+            alert("4명 손님이십니다");
+            checkSeatList();
+
+            var allarray = array.concat(objSeats);
+            // alert(`${stringTotalA}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+
+            alert(`${allarray}
+            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+       
+        }
         //totalA.innerText = stringTotalA;
-        checkSeatList();
-        alert(`${stringTotalA}
-    성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+  
 
     }
 }

@@ -205,7 +205,7 @@ html {
 }
 .poster{
     width:37%;
-    height: 85%;
+    height: 100%;
    
     float:left;
     border-radius: 20px;
@@ -349,17 +349,17 @@ html {
     width:100%;
 
 }
- .selected{
+ .selected___{
     width:35px;
     background-color:darkred;
 }
-.reserved{
+.reserved___{
     width:35px;
     background-color:cornflowerblue;
 }
 .empty{
     width:35px;
-    background-color:black;
+    background-color:pink;
 } 
  .screen{
     width:100%;
