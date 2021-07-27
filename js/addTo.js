@@ -223,6 +223,11 @@ $(document).ready(function(){
 	let totalPrice = 0;
 	let selectItem = {};
 	let num = 0;
+
+	// let count = 0;
+	// let g_Menu = [];
+	
+	localStorage.clear();
 	$('.add_to_cart').click(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
@@ -234,8 +239,31 @@ $(document).ready(function(){
 		for(i in selectItem){
 			console.log(Number(selectItem[i][1].replace("원","")));
 			totalPrice += Number(selectItem[i][1].replace("원",""));
+
+	
+			
+			// if(count == 0) {	
+			// g_Menu.push(v1);
+			// count = 1;
+			// }
+
 		}
+		// count = 0; 
+
+		
 		console.log(selectItem);
+		
+		localStorage.setItem("menu", JSON.stringify(selectItem));
+		let g_menu =  localStorage.getItem("menu");
+
+		alert(g_menu);
+		// for(i; i<3; i++){
+		//   g_Menu.push(selectItem[i][0]);
+		// }
+	
+
+
+
 
 
 		$("body").append('<div class="floating-cart"></div>');		
