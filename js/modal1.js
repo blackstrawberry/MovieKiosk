@@ -244,7 +244,8 @@ seatColor.addEventListener('click', (e) =>{
                 e.target.style.backgroundColor="pink";
                 // countSeat--;
                 // seatPrice -= 6000;
-                // totalB.innerText = `성인 ${countSeat}인     가격 : ${seatPrice}원     `; 
+                // t
+                otalB.innerText = `성인 ${countSeat}인     가격 : ${seatPrice}원     `; 
             }   
           
         }else{

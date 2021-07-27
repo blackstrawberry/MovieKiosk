@@ -136,7 +136,7 @@
 									</span>
 									<a onclick="next_page4();">
 										<h2>은혼 더 파이널</h2>
-										<div class="content">
+										<div class="ent">
 											<p>애니매이션 (15세)</p>
 										</div>
 									</a>

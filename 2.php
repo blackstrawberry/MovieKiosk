@@ -234,14 +234,7 @@
 							
 							</section>
 
-
-
-
-
-
  </script>
-
-
 
 						</div>
 
