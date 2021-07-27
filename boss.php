@@ -1,32 +1,13 @@
 
-<!-- <div class="page-wrapper">
-</div>
-
-
-<div class="modal-wrapper">
-  <div class="modal_wrapper">
-    <div class="head">
-      <a class="btn-close trigger" href="#">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </a>
-    </div>
-    <div class="content">
-        <div class="good-job">
-          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-          <h1>Good Job!</h1>
-        </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- 모달창 예매버튼 클릭시 나타나도록 구현 -->
 
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
 		<img src="./images/SSSnack.png" style="width:60%;">
 		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
-      <a href="#" title="Close" class="modal-close">x</a> 
+		
+		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
+      <a href="" title="Close" class="modal-close" style="size:1px;">X</a> 
         <!-- modal -->
 
        <div class="card">

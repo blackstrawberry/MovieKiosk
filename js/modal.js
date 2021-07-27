@@ -31,8 +31,9 @@ let seatPrice = 0;
  
  console.log(snackmodal);
 
+// 예매가 오류없이 진행되었을 때 스낵 모달 띄워주는 함수
 function OpenSnack(){
-    if(snackmodal.style.display = 'none'){
+    if(snackmodal.style.display == 'none'){
         snackmodal.style.display = 'block';
     }else{
         snackmodal.style.display ='none';
@@ -41,6 +42,17 @@ function OpenSnack(){
 }
 
 OpenSnack();
+
+// 오류 표시해주는 모달 띄워주는 함수 
+function OpenAlert(){
+    if(alertmodal.style.display == 'none'){
+        alertmodal.style.display = 'block';
+    }else{
+        alertmodal.style.display ='none';
+    }
+}
+
+OpenAlert();
 
 
 
@@ -91,22 +103,16 @@ function seatOnclickEvent() {
 
 }
 
-
+// 좌석 값 받아오는 함수 
 function checkSeatList() {
     var reserved = document.getElementsByClassName("selected");
     console.log(reserved);
-    // if (reserved.length > 5) {
-    //     alert("최대 4개의 좌석까지 선택 가능합니다");
-    // } else {
-
         if (reserved.length != 0) {
             for (var i = 0; i < reserved.length; i++) {
                 objSeats[i] = reserved[i].id;
                 console.log(objSeats[i]);
             }
         }
-       
-    // }
 }
 
 
@@ -222,25 +228,25 @@ ticketing.addEventListener('click', function () {
         alert("입력받지 못한 예메 정보가 있습니다")
     }
     else if(countSeat>4){
-        alert("4인이상 예매 불가합니다")
-        location.href="#at";
+        OpenAlert();
+        
 
     }
     else {
         if(countSeat==1){
             
-            alert("1명 손님이십니다");
+            // alert("1명 손님이십니다");
             checkSeatList();
             OpenSnack();
             var allarray = array.concat(objSeats);
 
-            alert(`${allarray}
-            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+            // alert(`${allarray}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
             
         }
         else if(countSeat==2){
             
-            alert("2명 손님이십니다");
+            // alert("2명 손님이십니다");
            
             checkSeatList();
             OpenSnack();
@@ -251,27 +257,27 @@ ticketing.addEventListener('click', function () {
             // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
 
             
-            alert(`${allarray}
-            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+            // alert(`${allarray}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
        
 
         }
         else if(countSeat==3){
            
-            alert("3명 손님이십니다");
+            // alert("3명 손님이십니다");
             
             checkSeatList();
             OpenSnack();
             var allarray = array.concat(objSeats);
    
-            alert(`${allarray}
-            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+            // alert(`${allarray}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
       
         }
         else if(countSeat==4)
         {
             
-            alert("4명 손님이십니다");
+            // alert("4명 손님이십니다");
             
             checkSeatList();
             OpenSnack();
@@ -279,8 +285,8 @@ ticketing.addEventListener('click', function () {
             // alert(`${stringTotalA}
             // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
 
-            alert(`${allarray}
-            성인 ${countSeat}인   가격 : ${seatPrice}원     `);
+            // alert(`${allarray}
+            // 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
        
         }
         //totalA.innerText = stringTotalA;

@@ -1,8 +1,51 @@
 
 
+<div id="open-modal" class="modal-window">
+    <div id="main">
+		<label for="open-modal"></label>
+		<img src="./images/SSSnack.png" style="width:60%;">
+		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
+		
+		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
+      <a href="" title="Close" class="modal-close" style="size:1px;">X</a> 
+        <!-- modal -->
+
+       <div class="card">
+           
+             <div class="text">
+               <div class="title" style="margin-top:80px; margin-left:50px;" >
+                 <h2>예(스낵창) / 아니요(결제창)</h2>
+               </div>
+            
+             </div>
+     
+             <div class="buttons">
+				<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
+               <div class="button" onclick="">예</div>
+               <div class="button" onclick="">아니요</div>
+             </div>
+        </div>
+      </div>
+  </div>
+
+  <div id="open-m" class="modal-w">
+    <div id="main1">
+		<label for="open-modal"></label>
+		<img src="./images/theater.jpg" style="width:70%;">
+		<h2>한 번에 4명 예약은 어렵습니다.</h2>
+      <a href="#" title="Close" class="modal-close">x</a> 
+        <!-- modal -->
+
+       <div class="card">
+        </div>
+      </div>
+  </div>
+
+
+
             <div id="CM">
 				<div>
-					<h2 style="color:white; margin-top:-40px;">상영관부터 순서대로 클릭해주세요!</h2>
+					<h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
 				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>
@@ -195,12 +238,15 @@
 
 														</div>
 														<div class="seat_reservation_right">
-															<div class="ticketing">
-																<input type="submit" name="submit" value="예매"    />
-															</div>
+
+															<div class="ticketing" id="checkout">
+													 	<div>
+														<input type="submit" name="submit" value="예매"    />	
+														</div>
+														</div>
 															<div class="color_explanation">
 																<table>
-																<tr>
+																	<tr>
 																		<!-- 좌석값과 안겹치게 하려고 ___ 추가 -->
 																		<td class="selected___"></td>
 																		<td style="color:#EAED0E;">선택</td>
@@ -235,6 +281,13 @@
 								</article>  
 							
 							</section>
+						
+			
+							<div>
+
+                      </div>
+                </div>
+
 						</div>
 
 						<script src="./js/modal.js"></script>
