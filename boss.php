@@ -29,15 +29,23 @@
   </div>
 
   <div id="open-m" class="modal-w">
-    <div id="main1">
+    <div id="main1" style="background-color:black;">
 		<label for="open-modal"></label>
-		<img src="./images/theater.jpg" style="width:70%;">
-		<h2>한 번에 4명 예약은 어렵습니다.</h2>
-      <a onclick="close_alert();" title="Close" class="modal-close">x</a> 
+		<img src="./images/alert.jpg" style="height:400px; width:650px;">
+		<!-- <h2>한 번에 4명 예약은 어렵습니다.</h2> -->
+      <a onclick="close_alert();" style="color:white;" title="Close" class="modal-close">(X)</a> 
         <!-- modal -->
 
-       <div class="card">
-        </div>
+       <!-- <div class="card">
+        </div> -->
+      </div>
+  </div>
+
+  <div id="open-a" class="modal-a">
+    <div id="main_enter" style="background-color:black;">
+		<label for="open-modal"></label>
+		<img src="./images/notenter.jpg" style="height:400px; width:650px;">
+      <a onclick="close_noenter();" style="color:white;" title="Close" class="modal-close">(X)</a> 
       </div>
   </div>
 

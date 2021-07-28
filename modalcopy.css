@@ -43,7 +43,12 @@
 
 /*  두번째 모달  */
 #main1{
-  background-color: rgb(243, 241, 146);
+  background-color: rgb(192, 32, 32);
+  width:800px;
+}
+
+#main_enter
+{
   width:800px;
 }
 
