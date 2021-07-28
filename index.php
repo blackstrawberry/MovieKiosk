@@ -11,8 +11,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="popup.css" />
+
 		<link rel="stylesheet" href="modalcopy.css" />
+	  <link rel="stylesheet" href="./css/modal.css" /> 
+
+
 
 		
 		<meta charset="utf-8">
@@ -43,7 +46,7 @@
     <script>
         function next_page1() {
             $(function() {  
-                $("#ONE").load("./2.php");
+                $("#ONE").load("./boss.php");
 				});
         }
     </script>
@@ -51,21 +54,21 @@
 	  <script>
         function next_page2() {
             $(function() {  
-                $("#ONE").load("./3.php");
+                $("#ONE").load("./black.php");
             });
         }
     </script>
 	  <script>
         function next_page3() {
             $(function() {  
-                $("#ONE").load("./4.php");
+                $("#ONE").load("./guimyeol.php");
             });
         }
     </script>
 	  <script>
         function next_page4() {
             $(function() {  
-                $("#ONE").load("./5.php");
+                $("#ONE").load("./eunhon.php");
             });
         }
     </script>
@@ -73,7 +76,7 @@
 	<script>
         function next_page5() {
             $(function() {  
-                $("#ONE").load("./6.php");
+                $("#ONE").load("./jug.php");
             });
         }
     </script>

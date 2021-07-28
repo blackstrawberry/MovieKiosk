@@ -1,46 +1,20 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Phantom by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<link rel="stylesheet" href="modalcopy.css" />
-	  <link rel="stylesheet" href="./css/modal.css" /> 
-
-
-
-		
-		<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-
-
-<!-- 모달창 예매버튼 클릭시 나타나도록 구현 -->
 
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
-		<img src="./images/snack.png" style="width:200px;">
-		<h2>스낵류를 드시겠습니까?</h2>
-      <a href="#" title="Close" class="modal-close">x</a> 
+		<img src="./images/SSSnack.png" style="width:60%;">
+		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
+		
+		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
+      <a href="" title="Close" class="modal-close" style="size:1px;">X</a> 
         <!-- modal -->
 
        <div class="card">
            
              <div class="text">
-               <div class="title" style="margin-top:80px; margin-left:10px;" >
-                 <h3>예(스낵창)/아니요(결제창)</h4>
+               <div class="title" style="margin-top:80px; margin-left:50px;" >
+                 <h2>예(스낵창) / 아니요(결제창)</h2>
                </div>
             
              </div>
@@ -54,32 +28,18 @@
       </div>
   </div>
 
-  <div id="open-modal" class="modal-window">
+  <div id="open-m" class="modal-w">
     <div id="main1">
 		<label for="open-modal"></label>
-		<img src="./images/snack.png" style="width:200px;">
-		<h2>스낵류를 드시겠습니까?</h2>
+		<img src="./images/theater.jpg" style="width:70%;">
+		<h2>한 번에 4명 예약은 어렵습니다.</h2>
       <a href="#" title="Close" class="modal-close">x</a> 
         <!-- modal -->
 
        <div class="card">
-           
-             <div class="text">
-               <div class="title" style="margin-top:80px; margin-left:10px;" >
-                 <h3>예(스낵창)/아니요(결제창)</h4>
-               </div>
-            
-             </div>
-     
-             <div class="buttons">
-				<!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
-               <div class="button" onclick="">예</div>
-               <div class="button" onclick="">아니요</div>
-             </div>
         </div>
       </div>
   </div>
-
 
 
 
@@ -105,7 +65,7 @@
 														</select>
 														<select class="movie_name" >
 															<!-- <option>영화제목</option> -->
-															<option selected>보스 베이비2</option>
+															<option selected>정글 크루즈</option>
 															<!-- <option>블랙 위도우</option>
 															<option>귀멸의칼날 무한열차</option>
 															<option>은혼 더 파이널</option>
@@ -280,9 +240,9 @@
 														<div class="seat_reservation_right">
 
 															<div class="ticketing" id="checkout">
-													 <a href="#open-modal">
-															<input type="submit" name="submit" value="예매"    />	
-														<!-- </a> -->
+													 	<div>
+														<input type="submit" name="submit" value="예매"    />	
+														</div>
 														</div>
 															<div class="color_explanation">
 																<table>
@@ -331,6 +291,5 @@
 						</div>
 
 						<script src="./js/modal.js"></script>
-</body>
 					
  
