@@ -24,6 +24,19 @@ const reserved = [];
 var allarray;
 array[0] = ["2 D"];
 
+$(function() {
+
+    $("#requestBtn").on("click", function() {
+
+        $.ajax("insert_resevation.php")
+
+        .done(function() {
+            alert("요청 성공");
+
+        })
+    });
+
+});
 // console.log(targetPeople);
 
 let countSeat = 0;
@@ -256,3 +269,4 @@ ticketing.addEventListener('click', function () {
         })
 }
 })
+
