@@ -21,7 +21,8 @@
 	console.log(pay_menu);
 	// console.log(pay_menu['0']); // key 값이 0인 value 값 
 	// console.log(pay_menu['0'][0]); // 상품이름 
-	// console.log(pay_menu['0'][1]); // 상품가격 
+	// console.log(pay_menu['0'][1]); // 상품가격
+	console.log(pay_menu['1'][2]); // 상품이미지
 
 
 </script>
@@ -40,7 +41,7 @@
 	<article class="product">
 		<header>
 			<a class="remove">
-				<img src="http://www.astudio.si/preview/blockedwp/wp-content/uploads/2012/08/1.jpg" alt="">
+				<img src="<script>pay_menu['0'][2];</scrip>" alt=""> <!-- 경로부분은 서버로 올렸을때 바꿔주셔야 합니다! -->
 
 				<h3>Remove</h3>
 			</a>
