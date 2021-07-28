@@ -1,5 +1,6 @@
 
 
+<!-- 스낵창 모달 -->
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
@@ -27,7 +28,7 @@
         </div>
       </div>
   </div>
-
+  <!-- 4인 이상 경고 모달 -->
   <div id="open-m" class="modal-w">
     <div id="main1" style="background-color:black;">
 		<label for="open-modal"></label>
@@ -41,6 +42,7 @@
       </div>
   </div>
 
+  <!-- 미 입력 경고 모달 -->
   <div id="open-a" class="modal-a">
     <div id="main_enter" style="background-color:black;">
 		<label for="open-modal"></label>
@@ -53,7 +55,7 @@
 
             <div id="CM">
 				<div>
-					<h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
+					<h2 style="color:white; margin-top:-50px; color:#ECF6CE">Thank u for coming</h2>
 				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>

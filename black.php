@@ -1,13 +1,14 @@
 
 
+<!-- 스낵창 모달 -->
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
 		<img src="./images/SSSnack.png" style="width:60%;">
 		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
-		
+
 		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
-      <a href="" title="Close" class="modal-close" style="size:1px;">X</a> 
+      <a onclick="close_snack();"; title="Close" class="modal-close" style="size:1px;">X</a> 
         <!-- modal -->
 
        <div class="card">
@@ -27,17 +28,26 @@
         </div>
       </div>
   </div>
-
+  <!-- 4인 이상 경고 모달 -->
   <div id="open-m" class="modal-w">
-    <div id="main1">
+    <div id="main1" style="background-color:black;">
 		<label for="open-modal"></label>
-		<img src="./images/theater.jpg" style="width:70%;">
-		<h2>한 번에 4명 예약은 어렵습니다.</h2>
-      <a href="#" title="Close" class="modal-close">x</a> 
+		<img src="./images/alert.jpg" style="height:400px; width:650px;">
+		<!-- <h2>한 번에 4명 예약은 어렵습니다.</h2> -->
+      <a onclick="close_alert();" style="color:white;" title="Close" class="modal-close">(X)</a> 
         <!-- modal -->
 
-       <div class="card">
-        </div>
+       <!-- <div class="card">
+        </div> -->
+      </div>
+  </div>
+
+  <!-- 미 입력 경고 모달 -->
+  <div id="open-a" class="modal-a">
+    <div id="main_enter" style="background-color:black;">
+		<label for="open-modal"></label>
+		<img src="./images/notenter.jpg" style="height:400px; width:650px;">
+      <a onclick="close_noenter();" style="color:white;" title="Close" class="modal-close">(X)</a> 
       </div>
   </div>
 
@@ -45,7 +55,7 @@
 
             <div id="CM">
 				<div>
-					<h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
+				<h2 style="color:white; margin-top:-50px; color:#ECF6CE">Thank u for coming</h2>
 				</div>
 				<!-- <input type="checkbox" id="popup">
 				<label for="popup"><img src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px; margin-top:-90px;"></label>

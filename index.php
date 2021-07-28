@@ -108,7 +108,8 @@
 					<div id="main">
 						<div class="inner"> -->
 							<header>
-								<h1 style="color:white"><br />Movie reservation System.</h1>
+								<!-- <img src="./images/main.jpg" style="height:150px width:700px" alt=""> -->
+								<h1 style="color:white"><br />Movie Reservation System.</h1>
 								<!-- <p style="color:white">please use a comfortable machine</p> -->
 							</header>
 						<!-- </div>
@@ -154,7 +155,7 @@
 										</div>
 									</a>
 								</article>
-								<article class="style4">
+								<article class="style4" style="margin-left:390px">
 									<span class="image">
 										<img src="images/은혼 더 파이널.jpg" alt="은혼 더 파이널" />
 									</span>
