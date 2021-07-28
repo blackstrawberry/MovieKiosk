@@ -1,0 +1,277 @@
+$offwhite: #e0e0e0;
+$grey: #5F5F5F;
+$blue: #77aed7;
+$lightgrey: #777873;
+$darkgrey: #474747;
+$yellow: #f0dc75;
+$bg: #efefef;
+$purple: #7d2786;
+$green: #32BC5C;
+$red: #FA5C00;
+body {
+  background-color: $bg;
+  width: 100%;
+  height: 100%;
+}
+@mixin content {
+  content: '';
+  display: block;
+  position: absolute;
+}
+@mixin center {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+@mixin btn {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: $offwhite;
+  @include center;
+}
+
+.pos {
+  @include center;
+  width: 130px;
+  height: 226px;
+  background-color: $grey;
+  border-radius: 20px;
+
+  &:before {
+    content: '';
+    top: 30px;
+    left: -5px;
+    height: 180px;
+    width: 150px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    border-radius: 20px;
+    background-color: #666666;
+    background: linear-gradient(to right, $lightgrey 0%, $lightgrey 2%,$darkgrey 2%,$darkgrey 4%,$lightgrey 4%,
+    $lightgrey 92%, $darkgrey 92%, $darkgrey 95%, $lightgrey 95%, $lightgrey 100%);
+  }
+
+  &:after {
+    content: '';
+    width: 100px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    border-radius: 4px;
+    background-color: $blue;
+    @include center;
+    margin: 0 auto;
+    border: 5px solid $darkgrey;
+    border-top: 20px solid $darkgrey;
+  }
+}
+
+.keyboard {
+
+  > span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    border-radius: 4px;
+    background-color: $offwhite;
+    @include center;
+    top: -15px;
+
+    &:before {
+      content: '';
+      @include btn;
+      left: -70px;
+    }
+
+    &:after {
+      content: '';
+      @include btn;
+      left: 35px;
+    }
+
+    &:nth-of-type(2) {
+      top: 35px;
+    }
+
+    &:nth-of-type(3) {
+      top: 85px;
+    }
+
+    &:nth-of-type(4) {
+      top: 135px;
+    }
+
+    &:nth-of-type(5) {
+      top: 180px;
+      height: 15px;
+    }
+
+    &:nth-of-type(5):before {
+      height: 15px;
+      background-color: $red;
+    }
+    &:nth-of-type(5):after {
+      height: 15px;
+      background-color: $green;
+    }
+  }
+}
+
+@keyframes receipt {
+  0% {
+    top: 0;
+    visibility: visible;
+    opacity:1
+  }
+  30% {
+    top: 0;
+    visibility: visible;
+    opacity:1
+  }
+  50% {
+    top: -60px;
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1
+  }
+  60% {
+    top: -70px;
+    transform: scale(.4);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    visibility: hidden;
+    opacity:0;
+  }
+}
+
+@keyframes card {
+  0% {
+    top: 400px;
+  }
+  30% {
+    top: 300px;
+  }
+  70% {
+    top: 300px;
+  }
+  100% {
+    top: 400px;
+  }
+}
+
+.receipt {
+  left:0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: 80px;
+  height: 53px;
+  background-color: $yellow;
+  display: block;
+  border-top: 1px dashed $bg;
+  border-bottom: 1px dashed $bg;
+  animation: receipt 8s infinite ease-in-out;
+
+  &:after {
+    content:'';
+    top: 10px;
+    left: 5px;
+    position: absolute;
+    width: 60%;
+    height: 5px;
+    display: block;
+    border-radius: 2px;
+    background-color: darken($yellow, 25%);
+    box-shadow: 0px 10px 0 darken($yellow, 25%);
+  }
+
+  &:before {
+    content:'';
+    top: 30px;
+    right: 5px;
+    position: absolute;
+    width: 30%;
+    height: 5px;
+    display: block;
+    border-radius: 2px;
+    background-color: darken($yellow, 25%);
+    box-shadow: 0px 8px 0 darken($yellow, 25%);
+  }
+}
+
+.card {
+  @include center;
+  top: 400px;
+  width: 100px;
+  height: 150px;
+  display: block;
+  z-index: -1;
+  border-radius: 10px;
+  background-color: $purple;
+  animation: card 8s infinite ease-in-out;
+
+  &:before {
+    top: 10px;
+    right: 30px;
+    width: 20px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: $yellow;
+    @include content;
+  }
+
+  &:after {
+    @include content;
+    bottom: 20px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $red;
+    box-shadow: 0px 10px 0 $yellow;
+  }
+
+  >span {
+    display: block;
+    width: 7px;
+    height: 50%;
+    top: 10px;
+    left: 30px;
+    position: absolute;
+    background-color: $offwhite;
+
+    &:before {
+      @include content;
+      width: 7px;
+      height: 40%;
+      top: 0;
+      right: 15px;
+      background-color: lighten($offwhite, .9);
+      box-shadow: 0 50px 0 $offwhite;
+    }
+
+    &:after {
+      @include content;
+      content: '♮';
+      font-size: 40px;
+      height: 30px;
+      width: 30px;
+      top: 40px;
+      left: 30px;
+      border-radius: 50%;
+      color: $offwhite;
+    }
+  }
+}
