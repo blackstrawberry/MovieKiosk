@@ -234,24 +234,20 @@ $(document).ready(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
 		var productImage = $(productCard).find('img').get(0).src;
+		console.log(productImage.replace("http://localhost/movie_jong","."));
 		var productName = $(productCard).find('.product_name').get(0).innerHTML;
 		let productPrice = 	$(productCard).find('.product_price').get(0).innerHTML;
-		selectItem[num++] = [productName,productPrice];
+		selectItem[num++] = [productName,productPrice,productImage.replace("http://localhost/movie_jong",".")];
+		console.log(selectItem[num-1][2]);
 		totalPrice = 0;
 		for(i in selectItem){
 			console.log(Number(selectItem[i][1].replace("원","")));
 			totalPrice += Number(selectItem[i][1].replace("원",""));
 
-			
-
-	
 		}
-		// count = 0; 
-
 		
 		console.log(selectItem);
 	
-		
 		localStorage.setItem("menu", JSON.stringify(selectItem) );
 		let g_menu =  localStorage.getItem("menu");
 		alert(g_menu);
