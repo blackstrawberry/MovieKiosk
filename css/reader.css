@@ -1,9 +1,9 @@
 @charset "UTF-8";
-body {
-  background-color: #efefef;
+/* body {
+  background-color:black;
   width: 100%;
   height: 100%;
-}
+} */
 
 .pos {
   top: 0;
@@ -279,7 +279,7 @@ body {
   display: block;
   z-index: -1;
   border-radius: 10px;
-  background-color: #7d2786;
+  background-color: #bae9e9;
   -webkit-animation: card 8s infinite ease-in-out;
           animation: card 8s infinite ease-in-out;
 }
