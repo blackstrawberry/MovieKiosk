@@ -5,9 +5,9 @@
 		<label for="open-modal"></label>
 		<img src="./images/SSSnack.png" style="width:60%;">
 		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
-		
+
 		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
-      <a href="" title="Close" class="modal-close" style="size:1px;">X</a> 
+      <a onclick="close_snack();"; title="Close" class="modal-close" style="size:1px;">X</a> 
         <!-- modal -->
 
        <div class="card">
@@ -33,7 +33,7 @@
 		<label for="open-modal"></label>
 		<img src="./images/theater.jpg" style="width:70%;">
 		<h2>한 번에 4명 예약은 어렵습니다.</h2>
-      <a href="#" title="Close" class="modal-close">x</a> 
+      <a onclick="close_alert();" title="Close" class="modal-close">x</a> 
         <!-- modal -->
 
        <div class="card">

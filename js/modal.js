@@ -77,6 +77,8 @@ checkSeatList();
 
 
 
+
+
 //onclick시 이벤트 넣기
 function seatOnclickEvent() {
 
@@ -229,6 +231,9 @@ ticketing.addEventListener('click', function () {
     }
     else if(countSeat>4){
         OpenAlert();
+        
+    // 경고 모달창이 6초뒤에 자동으로 내려감 x버튼으로 내릴수도 있음
+    setTimeout(function() { $('#open-m').hide();}, 6000);
         
 
     }

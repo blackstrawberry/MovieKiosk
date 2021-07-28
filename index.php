@@ -79,6 +79,20 @@
                 $("#ONE").load("./jug.php");
             });
         }
+
+	// 스낵 모달창 x눌렀을때 내리게 해주는 함수 
+	function close_snack() {
+    $('#open-modal').hide();
+	};
+
+	// 경고 모달창 x 눌렀을 때 내리게 해주는 함수 
+	function close_alert() {
+    $('#open-m').hide();
+	};
+
+// 경고 모달창이 6초뒤에 자동으로 내려감 x버튼으로 내릴수도 있음
+setTimeout(function() { $('#open-m').hide();}, 6000);
+
     </script>
 	</head>
 
