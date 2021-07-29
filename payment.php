@@ -9,6 +9,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+	    <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
 	<link rel="stylesheet" href="css/payment.css">
     <script src="js/payment.js"></script>
 </head>
@@ -207,8 +219,51 @@
 
 			<div class="right">
 				<h1 class="total">Total: <span>177.16</span>€</h1>
-				<a class="btn">Checkout</a>
+
+				<a class="btn" data-toggle="modal" data-target="#basicModal">Checkout</a>
+				
 			</div>
+
+
+
+    <!-- basic modal -->
+	<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">결제완료</h4>
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+
+            
+            <!-- <div class="modal-body" style="margin-left: 100px;"> -->
+            <div class="modal-body">
+                   
+              
+
+
+            </div>
+
+
+			<div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+              <button type="button" class="btn btn-primary">확인</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
 
 		</div>
 	</footer> 
