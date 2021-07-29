@@ -230,6 +230,7 @@ $(document).ready(function(){
 	localStorage.clear();
 	
 
+	
 	$('.add_to_cart').click(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
@@ -256,6 +257,7 @@ $(document).ready(function(){
 
 
 
+		var productName = $(productCard).find('.product_name').get(0).innerHTML;				
 
 		$("body").append('<div class="floating-cart"></div>');		
 		var cart = $('div.floating-cart');		
@@ -297,13 +299,11 @@ $(document).ready(function(){
 					$("#cart").append(basket);
 
 					$(this).parent().fadeOut(300, function(){
-
 						$(this).remove();
-
-						// if($("#cart .cart-item").size() == 0){
-						// 	$("#cart .empty").fadeIn(500);
-						// 	$("#checkout").fadeOut(500);
-						// }
+						if($("#cart .cart-item").size() == 0){
+							$("#cart .empty").fadeIn(500);
+							$("#checkout").fadeOut(500);
+						}
 					})
 				});
  		    setTimeout(function(){
