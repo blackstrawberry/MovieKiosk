@@ -47,7 +47,8 @@ header('Content-Type: text/html; charset=utf-8');
     if($sizeofReservation == 1){
         $_SESSION["resevationPeople_1"] = $json->seat_1;
         $people_1 = $json->seat_1;
-        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, , 'time', title, seat_1, people) VALUES ($num, $place, 6000, $time, $movieName, $people_1, $personnel)";
+        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, time, title, seat_1, people) 
+                                        VALUES ('$num', '$place', '6000', '$time', '$movieName', '$people_1', '$personnel');";
     
     }else if($sizeofReservation == 2){
             $_SESSION["resevationPeople_1"] = $json->seat_1;
@@ -64,7 +65,8 @@ header('Content-Type: text/html; charset=utf-8');
         $people_1 = $json->seat_1;
         $people_2 = $json->seat_2; 
         $people_3 = $json->seat_3;
-        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, 'time', title, seat_1,seat_2,seat_3, people) VALUES ($num, $place, 18000, $time, $movieName, $people_1, $people_2,$people_3, $personnel)";
+        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, time, title, seat_1, seat_2, seat_3, people) 
+                                    VALUES ('$num', '$place', '18000', '$time', '$movieName', '$people_1', '$people_2','$people_3', '$personnel');";
     }else if($sizeofReservation == 4){
         $_SESSION["resevationPeople_1"] = $json->seat_1;
         $_SESSION["resevationPeople_2"] = $json->seat_2;  
@@ -74,7 +76,8 @@ header('Content-Type: text/html; charset=utf-8');
         $people_2 = $json->seat_2; 
         $people_3 = $json->seat_3;  
         $people_4 = $json->seat_4;  
-        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, 'time', title, seat_1,seat_2,seat_3,seat_4, people) VALUES ($num, $place, 24000, $time, $movieName, $people_1, $people_2,$people_3,$people_4, $personnel)";
+        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, time, title, seat_1, seat_2, seat_3, seat_4, people) 
+                                       VALUES ('$num', '$place', '24000', '$time', '$movieName', '$people_1', '$people_2','$people_3','$people_4', '$personnel');";
     }
 
     $result = mysqli_query($conn,  $_SESSION["resevationSQL"]); 
