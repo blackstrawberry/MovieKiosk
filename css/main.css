@@ -2377,10 +2377,10 @@ input, select, textarea {
 		overflow-x: auto;
 	}
 
-	table {
-		margin: 0 0 2em 0;
+	/* table {
+		/* margin: 0 0 2em 0; 
 		width: 100%;
-	}
+	} */
 
 		table tbody tr {
 			border: solid 1px #c9c9c9;

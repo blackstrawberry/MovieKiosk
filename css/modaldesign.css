@@ -481,8 +481,8 @@ html {
     /* width:20%;
     height:90%; */
   
-    float: left;
-    margin:13px 0px;
+    /* float: left;
+    margin:13px 0px; */
 }
 /* 왼쪽 좌석 */
 .seat_chair{
@@ -496,8 +496,8 @@ html {
 } 
 /* 오른쪽 좌석 */
 .seat_chair_right{
-  margin-left:315px;
-  margin-top:-424px;
+  margin-left:270px;
+  margin-top:-336px;
   float:left;
   font-size:14px;
   font-family: bold;
@@ -518,7 +518,7 @@ html {
     
 }
 .screen{
-  margin-left:40px;
+  margin-left:18px;
   width:100%;
   height:20%;
   border: 5px solid black;
@@ -532,7 +532,7 @@ html {
 } 
 .seat_chair_middle > tr,td{
     /* border:7px solid rgb(70, 145, 168); */
-    border:7px solid rgb(68, 20, 158);
+    border:1px solid rgb(68, 20, 158);
      background-color:black; 
 } */
 td{
