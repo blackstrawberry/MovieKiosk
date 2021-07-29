@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./css/main.css" />
 
-		 <link rel="stylesheet" href="modalcopy.css" />
+		 <link rel="stylesheet" href="./css/modaldesign.css" />
 	  <link rel="stylesheet" href="./css/modal.css" /> 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
