@@ -1,4 +1,3 @@
-
 <?php
 include ('dbConnect.php');
 header('Content-Type: text/html; charset=utf-8');
@@ -55,7 +54,8 @@ header('Content-Type: text/html; charset=utf-8');
             $_SESSION["resevationPeople_2"] = $json->seat_2;  
         $people_1 = $json->seat_1;
         $people_2 = $json->seat_2;
-        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, 'time', title, seat_1,seat_2, people) VALUES ($num, $place, 12000, $time, $movieName, $people_1, $people_2, $personnel)";
+        $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, time, title, seat_1,seat_2, people) 
+                                       VALUES ('$num', '$place', '12000', '$time', '$movieName', '$people_1', '$people_2', '$personnel');";
     }
     else if($sizeofReservation == 3){
         $_SESSION["resevationPeople_1"] = $json->seat_1; 
@@ -77,7 +77,12 @@ header('Content-Type: text/html; charset=utf-8');
         $_SESSION["resevationSQL"]  = "INSERT INTO ticket (reservation_no, theater, price, 'time', title, seat_1,seat_2,seat_3,seat_4, people) VALUES ($num, $place, 24000, $time, $movieName, $people_1, $people_2,$people_3,$people_4, $personnel)";
     }
 
-    $result = mysqli_query($conn, $sql); if($result === false){ echo '저장하는 과정에서 문제가 생겼습니다. 관리자에게 문의해주세요'; error_log(mysqli_error($conn)); } else { echo '성공했습니다. <a href="index.php">돌아가기</a>'; }
+    $result = mysqli_query($conn,  $_SESSION["resevationSQL"]); 
+    if($result === false){ 
+        echo (mysqli_error($conn));
+    }else { 
+        echo '성공했습니다.'; 
+    }
 
    
     ?>
