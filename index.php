@@ -3,16 +3,11 @@
 		<title>Phantom by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="./css/main.css" />
 
-		<link rel="stylesheet" href="modalcopy.css" />
+		 <link rel="stylesheet" href="./css/modaldesign.css" />
 	  <link rel="stylesheet" href="./css/modal.css" /> 
 
-
-
-		
-		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +35,7 @@
     <script>
         function next_page1() {
             $(function() {  
-                $("#ONE").load("./boss.php");
+                $("#ONE").load("./movie_boss.php");
 				});
         }
     </script>
@@ -48,21 +43,21 @@
 	  <script>
         function next_page2() {
             $(function() {  
-                $("#ONE").load("./black.php");
+                $("#ONE").load("./movie_black.php");
             });
         }
     </script>
 	  <script>
         function next_page3() {
             $(function() {  
-                $("#ONE").load("./guimyeol.php");
+                $("#ONE").load("./movie_guimyeol.php");
             });
         }
     </script>
 	  <script>
         function next_page4() {
             $(function() {  
-                $("#ONE").load("./eunhon.php");
+                $("#ONE").load("./movie_eunhon.php");
             });
         }
     </script>
@@ -70,9 +65,26 @@
 	<script>
         function next_page5() {
             $(function() {  
-                $("#ONE").load("./jug.php");
+                $("#ONE").load("./movie_jug.php");
             });
         }
+
+	// 스낵 모달창 x눌렀을때 내리게 해주는 함수 
+	function close_snack() {
+    $('#open-modal').hide();
+	};
+
+	// 경고 모달창 x 눌렀을 때 내리게 해주는 함수 
+	function close_alert() {
+    $('#open-m').hide();
+	};
+
+	// 경고 모달창 x 눌렀을 때 내리게 해주는 함수 
+	function close_noenter() {
+    $('#open-a').hide();
+	};
+
+
     </script>
 	</head>
 
@@ -85,7 +97,8 @@
 					<div id="main">
 						<div class="inner"> -->
 							<header>
-								<h1 style="color:white"><br />Movie reservation System.</h1>
+								<h1 style="color:white"><br />Movie Reservation System.</h1>
+								<!-- <img src="./images/main.png" style="width:200px; margin-right:900px; margin-top:-500px;">  -->
 								<!-- <p style="color:white">please use a comfortable machine</p> -->
 							</header>
 						<!-- </div>
@@ -131,7 +144,7 @@
 										</div>
 									</a>
 								</article>
-								<article class="style4">
+								<article class="style4" style="margin-left:390px">
 									<span class="image">
 										<img src="images/은혼 더 파이널.jpg" alt="은혼 더 파이널" />
 									</span>
@@ -158,17 +171,9 @@
 		
 
 		<!-- Scripts -->
-		   
-			
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 			<script src="./js/jquery.fullscreen-min.js"></script>
     		<script src="./js/jquery.fullscreen.js"></script>
-			
+			<!-- 모달 css 는 각 php 하단에 배치 -->
 	</div>
 	</body>
 </html>

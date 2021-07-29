@@ -13,8 +13,8 @@ const targetPeople = document.querySelector(".movie_people");
 const ticketing = document.querySelector(".ticketing");
 
 var snackmodal = document.getElementsByClassName("modal-window")[0];
-
 var alertmodal = document.getElementsByClassName("modal-w")[0];
+var noentermodal = document.getElementsByClassName("modal-a")[0];
 
 var array = [];
 var objSeats = [];
@@ -29,6 +29,8 @@ let countSeat = 0;
 let seatPrice = 0;
 
 console.log(snackmodal);
+
+
 
 // 예매가 오류없이 진행되었을 때 스낵 모달 띄워주는 함수
 function OpenSnack() {
@@ -52,6 +54,22 @@ function OpenAlert() {
 }
 
 OpenAlert();
+
+
+// 정보 미입력 오류 표시해주는 모달 띄워주는 함수 
+function NoEnterAlert(){
+    if(noentermodal.style.display == 'none'){
+        noentermodal.style.display = 'block';
+    }else{
+        noentermodal.style.display ='none';
+    }
+}
+
+NoEnterAlert();
+
+
+
+
 paintTodo();
 // poster영역에 이미지 보이게 하는 함수
 function paintTodo() {
@@ -71,6 +89,10 @@ function paintTodo() {
 
 seatOnclickEvent();
 checkSeatList();
+
+
+
+
 
 //onclick시 이벤트 넣기
 function seatOnclickEvent() {
@@ -159,15 +181,23 @@ ticketing.addEventListener('click', function () {
     console.log("선택한 string:" + targetTimeString);
     array[2] = (targetTimeString);
 
-    // let stringTotalA = array[0] + " " + array[1] + " " + array[2] + " " +
-    // array[3];
-
-    if (array[1] == undefined || array[2] == undefined || countSeat < 1 || array[3] == undefined) {
-        alert("선택되지 않은 항목이 있습니다.")
-    } else if (array[1] == "날짜" || array[2] == "시간") { // || array[4] == "인원"
-        alert("입력받지 못한 예메 정보가 있습니다")
-    } else if (countSeat > 4) {
+    if( array[1] == undefined || array[2] == undefined ||  countSeat < 1 ||  array[3] == undefined){ 
+        // alert("선택되지 않은 항목이 있습니다.")
+         NoEnterAlert();
+         setTimeout(function() { $('#open-a').hide();}, 3000);
+    }
+    else if ( array[1] == "날짜" || array[2] == "시간" ) { // || array[4] == "인원"
+        // alert("입력받지 못한 예메 정보가 있습니다")
+         NoEnterAlert();
+          // 미 입력 모달창이 3초뒤에 자동으로 내려감 x버튼으로 내릴수도 있음
+        setTimeout(function() { $('#open-a').hide();}, 3000);
+    }
+    else if(countSeat>4){
         OpenAlert();
+        
+        // 경고 모달창이 3초뒤에 자동으로 내려감 x버튼으로 내릴수도 있음
+        setTimeout(function() { $('#open-m').hide();}, 3000);
+        
 
     } else {
         if (countSeat == 1) {
@@ -291,4 +321,4 @@ ticketing.addEventListener('click', function () {
             }
         });
     }
-})
+});
