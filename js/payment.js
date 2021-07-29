@@ -82,4 +82,8 @@ $(document).ready(function(){
     check = true;
     $(".remove").click();
   });
+
+  
+
+
 });

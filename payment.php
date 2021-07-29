@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="css/payment.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="css/payment.css">
     <script src="js/payment.js"></script>
 </head>
 <body>
@@ -17,13 +18,53 @@
 <script>
 
 	let g_menu =  localStorage.getItem("menu");
-	let pay_menu = JSON.parse(g_menu)
+	let pay_menu = new Object();
+	pay_menu = JSON.parse(g_menu);
 	console.log(pay_menu);
 	// console.log(pay_menu['0']); // key 값이 0인 value 값 
 	// console.log(pay_menu['0'][0]); // 상품이름 
 	// console.log(pay_menu['0'][1]); // 상품가격
-	console.log(pay_menu['1'][2]); // 상품이미지
+	// console.log(pay_menu[0][2]); // 상품이미지
+	let dataObject = new Object();
+	dataObject = JSON.stringify( pay_menu );
+	console.log(dataObject);
 
+	$(function() {
+		document.getElementById("cart_length").style.display="none";
+		document.getElementById("cart_length").append(Object.keys(pay_menu).length+1);
+		for (let i=0;i<Object.keys(pay_menu).length+1;i++){
+			let img = pay_menu[i][2];
+			console.log(img);
+			document.getElementById("basket_image"+i).src = img;
+		}
+	});
+	
+	//$("div#basket_image"+0).append(img);
+	// $.ajax({
+	// 	type : 'get',
+	// 	url : '/MOVIE_JONG/paymentajax.php',
+	// 	data : { dataObject_ : dataObject },
+	// 	dataType:"json",
+	// 	success : function( data ){
+	// 		console.log( 'success' );
+	// 	},
+	// 	error : function( jqxhr , status , error ){
+	// 		console.log( jqxhr , status , error );
+	// 	}
+	// });
+	$.ajax({ 
+         type: 'GET', 
+         url : "paymentajax.php?mode=GET", 
+         data: {dataObject_:dataObject}, 
+         dataType:"json", 
+         success : function(data, status, xhr) {
+            console.log("성공"); 
+            console.log(data);
+         }, 
+         error: function(jqXHR, textStatus, errorThrown) { 
+            console.log(jqXHR.responseText); 
+         } 
+      });
 
 </script>
 
@@ -34,14 +75,15 @@
 
 <?php
 	$i = 0;
-  while($i<3){
+  	while($i<3){
 
 ?>
+	<div id=cart_length style=""></div>
 	<section id="cart"> 
 	<article class="product">
 		<header>
 			<a class="remove">
-				<img src="<script>pay_menu['0'][2];</scrip>" alt=""> <!-- 경로부분은 서버로 올렸을때 바꿔주셔야 합니다! -->
+				<img id='basket_image<?php echo $i; ?>'></img>
 
 				<h3>Remove</h3>
 			</a>
