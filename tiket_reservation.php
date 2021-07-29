@@ -27,20 +27,20 @@ header('Content-Type: text/html; charset=utf-8');
     //echo raw_json_encode($json); 
     $resevationNum = mt_rand(111111, 999999);
     session_start();
-    $_SESSION["resevationNum"] = $resevationNum;        // 예약 넘버
-    $_SESSION["resevationPlace"] = $json->place;  // 예약 장소 2D
-    $_SESSION["resevationDate"] = $json->date;   // 예약 날짜 
-    $_SESSION["resevationTime"] = $json->time;   // 예약 시간
+    $_SESSION["resevationNum"] = $resevationNum;           // 예약 넘버
+    $_SESSION["resevationPlace"] = $json->place;          // 예약 장소 2D
+    $_SESSION["resevationDate"] = $json->date;            // 예약 날짜 
+    $_SESSION["resevationTime"] = $json->time;             // 예약 시간
     $_SESSION["resevationMoiveName"] = $json->movieName; // 예약 영화이름
     $_SESSION["resevationPersonnel"] = $json->personnel; // 예약 인원 
     
     
-    $num = $resevationNum;
-    $place =  $json->place;
-    $date = $json->date;
-    $time = $json->time;
-    $movieName = $json->movieName;
-    $personnel = $json->personnel;
+    $num = $resevationNum;  // 예약넘버 
+    $place =  $json->place;     // 예약 장소 2D
+    $date = $json->date;        // 예약 날짜
+    $time = $json->time;        // 예약 시간
+    $movieName = $json->movieName; // 예약 영화이름
+    $personnel = $json->personnel; // 예약인원
     
     //예약 좌석 SESSION 에다가 저장
     $sizeofReservation = $personnel;
@@ -80,6 +80,8 @@ header('Content-Type: text/html; charset=utf-8');
                                        VALUES ('$num', '$place', '24000', '$time', '$movieName', '$people_1', '$people_2','$people_3','$people_4', '$personnel');";
     }
 
+
+    //SQL 문 실행
     $result = mysqli_query($conn,  $_SESSION["resevationSQL"]); 
     if($result === false){ 
         echo (mysqli_error($conn));

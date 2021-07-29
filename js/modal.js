@@ -23,18 +23,6 @@ const reserved = [];
 var allarray;
 array[0] = "2 D";
 
-$(function () {
-
-    $("#requestBtn").on("click", function () {
-        $.ajax("http://smoda.kr/yonghun/insert_resevation.php")
-            .success(function (){
-                alert("성공하였습니다.")
-            })
-
-            
-    });
-
-});
 // console.log(targetPeople);
 
 let countSeat = 0;

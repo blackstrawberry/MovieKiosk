@@ -26,7 +26,7 @@ ini_set('display_errors', true);
                     <div class="buttons">
                         <!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
                         <div class="button" onclick="">예</div>
-                        <div class="button" id="requestBtn">아니요</div>
+                        <div class="button">아니요</div>
                     </div>
                 </div>
             </div>
