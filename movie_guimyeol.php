@@ -1,20 +1,20 @@
 
-
 <!-- 스낵창 모달 -->
 <div id="open-modal" class="modal-window">
     <div id="main">
 		<label for="open-modal"></label>
-		<img src="./images/SSSnack.png" style="width:60%;">
-		<h2>예약이 완료되었습니다.<br></h2> <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
+		<h1 style="margin-top:50px;">[  ※예매가  완료되었습니다  ]</h1> 
+		<img src="./images/SSSnack.png" style="width: 40%; margin-top:-10px; margin-bottom:30px;">
+		<h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
 
 		<!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
-      <a onclick="close_snack();"; title="Close" class="modal-close" style="size:1px;">X</a> 
+      <a onclick="close_snack();"; title="Close" class="modal-close" style="size:1px; color:white;">( X )</a> 
         <!-- modal -->
 
        <div class="card">
            
              <div class="text">
-               <div class="title" style="margin-top:80px; margin-left:50px;" >
+               <div class="title" style="margin-top:80px; margin-left:50px; color:black;" >
                  <h2>예(스낵창) / 아니요(결제창)</h2>
                </div>
             
@@ -75,7 +75,7 @@
 														</select>
 														<select class="movie_name" >
 															<!-- <option>영화제목</option> -->
-															<option selected>보스 베이비2</option>
+															<option selected>귀멸의칼날 무한열차</option>
 															<!-- <option>블랙 위도우</option>
 															<option>귀멸의칼날 무한열차</option>
 															<option>은혼 더 파이널</option>

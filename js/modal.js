@@ -31,6 +31,8 @@ let seatPrice = 0;
  
  console.log(snackmodal);
 
+
+
 // 예매가 오류없이 진행되었을 때 스낵 모달 띄워주는 함수
 function OpenSnack(){
     if(snackmodal.style.display == 'none'){

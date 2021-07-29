@@ -9,16 +9,11 @@
 		<title>Phantom by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="./css/main.css" />
 
-		<link rel="stylesheet" href="modalcopy.css" />
+		 <link rel="stylesheet" href="modalcopy.css" />
 	  <link rel="stylesheet" href="./css/modal.css" /> 
 
-
-
-		
-		<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +41,7 @@
     <script>
         function next_page1() {
             $(function() {  
-                $("#ONE").load("./boss.php");
+                $("#ONE").load("./movie_boss.php");
 				});
         }
     </script>
@@ -54,21 +49,21 @@
 	  <script>
         function next_page2() {
             $(function() {  
-                $("#ONE").load("./black.php");
+                $("#ONE").load("./movie_black.php");
             });
         }
     </script>
 	  <script>
         function next_page3() {
             $(function() {  
-                $("#ONE").load("./guimyeol.php");
+                $("#ONE").load("./movie_guimyeol.php");
             });
         }
     </script>
 	  <script>
         function next_page4() {
             $(function() {  
-                $("#ONE").load("./eunhon.php");
+                $("#ONE").load("./movie_eunhon.php");
             });
         }
     </script>
@@ -76,7 +71,7 @@
 	<script>
         function next_page5() {
             $(function() {  
-                $("#ONE").load("./jug.php");
+                $("#ONE").load("./movie_jug.php");
             });
         }
 
@@ -108,8 +103,8 @@
 					<div id="main">
 						<div class="inner"> -->
 							<header>
-								<!-- <img src="./images/main.jpg" style="height:150px width:700px" alt=""> -->
 								<h1 style="color:white"><br />Movie Reservation System.</h1>
+								<!-- <img src="./images/main.png" style="width:200px; margin-right:900px; margin-top:-500px;">  -->
 								<!-- <p style="color:white">please use a comfortable machine</p> -->
 							</header>
 						<!-- </div>
@@ -182,17 +177,9 @@
 		
 
 		<!-- Scripts -->
-		   
-			
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 			<script src="./js/jquery.fullscreen-min.js"></script>
     		<script src="./js/jquery.fullscreen.js"></script>
-			
+			<!-- 모달 css 는 각 php 하단에 배치 -->
 	</div>
 	</body>
 </html>

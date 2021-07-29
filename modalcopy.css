@@ -1,13 +1,17 @@
 
 /* 모달 전체부분 */
 #main{
-  background-color: rgb(243, 241, 146);
-  width:800px;
+  background-color: rgb(167, 44, 44);
+  width:700px;
+  color:white;
+  border: 7px solid #8682bd;
 }
 /* 모달 중간 흰띄 부분 */
 .card {
   align-items: center;
-  background-color: rgb(195, 251, 190);
+  margin-left:50px;
+  width:600px;
+  background-color: rgb(81, 170, 157);
   border-radius: 40px;
   box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
     0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
