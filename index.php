@@ -7,18 +7,17 @@
     <meta content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/css/jquery.mb.YTPlayer.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!--css-->
-    <link rel="stylesheet" href="./css/addTo.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/tool.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     
+    
     <!-- js -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="./js/addTo.js"></script>
     
 
@@ -49,14 +48,15 @@
         </div>
 
 
-    <div class="ft">
 
-    </div>
-
-
+        <!-- js -->
     <script src="./js/jquery.fullscreen-min.js"></script>
     <script src="./js/jquery.fullscreen.js"></script>
     <script src="./js/warp_copy.js"></script>
+    
+    <div class="ft">
+        <!--헤더 받아올 부분임 -->
+</div>
 
 </body>
 
