@@ -1,10 +1,6 @@
 <?php
     session_start();
-    $host = "localhost";
-    $user = "w1004mesmg";
-    $pw = "sunmoons1s2s3!";
-    $dbName = "w1004mesmg"; // 서버에서 사용할때는 "w1004mesmg"로 해야함 
-    $_SESSION["conn"] = mysqli_connect($host, $user, $pw, $dbName); //db 연결부분
+    $conn = mysqli_connect('localhost', 'root', "1234", 'test');
 
 ?>
 

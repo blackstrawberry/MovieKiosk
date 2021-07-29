@@ -4,7 +4,6 @@
     // error_reporting(E_ALL);
     // ini_set('display_errors', FALSE);
     session_start();
-    $id = session_id();
 
     // $host = "localhost";
     // $user = "w1004mesmg";
@@ -38,9 +37,25 @@
         });
 
     });
-     var g_movieNum = localStorage.getItem("local");
-     console.log(g_movieNum);
-     document.getElementById('output1').innerHTML = g_movieNum;
+     var g_movieNum_value1 = localStorage.getItem("local1");
+     var g_movieNum_value2 = localStorage.getItem("local2");
+     var g_movieNum_value3 = localStorage.getItem("local3");
+
+
+    //  console.log(g_movieNum);
+     document.getElementById('output1').innerHTML = g_movieNum_value1;
+     document.getElementById('output2').innerHTML = g_movieNum_value2;
+     document.getElementById('output3').innerHTML = g_movieNum_value3;
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
@@ -82,8 +97,8 @@
                
 
                 <h2>언어:<p id="output1"></p></h2><br>
-                <h2>번호:</h2><br>
-                <h2>성별:</h2><br>
+                <h2>번호:<p id="output2"></p></h2><br>
+                <h2>성별:<p id="output3"></p></h2><br>
 
                 <input type="button" value="발권하기" id="dal" class="myButton">
                 <input type="button" value="취소" onclick="cancel();" id="cl" class="myButton">

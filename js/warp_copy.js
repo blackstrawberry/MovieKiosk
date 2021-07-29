@@ -38,6 +38,7 @@ function modal_page() {
     })
 }
 
+var ajaxReturn = [];
 function check_page() {
 
     $(document).ready(function () {
@@ -53,25 +54,46 @@ function check_page() {
         })
         
             var movie_num = $('#check_num').serialize();
-            // console.log(movie_num)
+           
             movie_num = Number(movie_num.replace("c_num=","")); 
-    
+            console.log(movie_num)
 
             $.ajax({
                 type : "POST",
-                url : "sql.php",
-                data: {num : movie_num},
+                url : "sql1.php",
+                data: {num1 : movie_num},
                 dataType : "text",
                 error : function(){ alert('통신실패!!');  },
                 success : function(res){ 
-                    localStorage.setItem("local", res);}
+                    localStorage.setItem("local1", res);   
+                }
              });
 
-            
+             $.ajax({
+                type : "POST",
+                url : "sql2.php",
+                data: {num2 : movie_num},
+                dataType : "text",
+                error : function(){ alert('통신실패!!');  },
+                success : function(res){ 
+                    localStorage.setItem("local2", res);   
+                }
+             });
+             
+             
+             $.ajax({
+                type : "POST",
+                url : "sql3.php",
+                data: {num3 : movie_num},
+                dataType : "text",
+                error : function(){ alert('통신실패!!');  },
+                success : function(res){ 
+                    localStorage.setItem("local3", res);   
+                }
+             }); 
 
 
 
-           
         })
     }
 
