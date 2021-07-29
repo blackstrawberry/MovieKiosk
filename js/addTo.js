@@ -220,22 +220,12 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-	let totalPrice = 0;
-	let selectItem = {};
+	
 	$('.add_to_cart').click(function(){
 		var productCard = $(this).parent();
 		var position = productCard.offset();
 		var productImage = $(productCard).find('img').get(0).src;
-		var productName = $(productCard).find('.product_name').get(0).innerHTML;
-		let productPrice = 	$(productCard).find('.product_price').get(0).innerHTML;
-		selectItem[productName] = productPrice;
-		totalPrice = 0;
-		for(i in selectItem){
-			console.log(Number(selectItem[i].replace("원","")));
-			totalPrice += Number(selectItem[i].replace("원",""));
-		}
-		console.log(selectItem);
-
+		var productName = $(productCard).find('.product_name').get(0).innerHTML;				
 
 		$("body").append('<div class="floating-cart"></div>');		
 		var cart = $('div.floating-cart');		
@@ -247,42 +237,21 @@ $(document).ready(function(){
 			$("body").removeClass("MakeFloatingCart");
 
 
-			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>"+productPrice+"</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
-			let basket = "<div class='basket'>Total: "+totalPrice+"원 </div>";
+			var cartItem = "<div class='cart-item'><div class='img-wrap'><img src='"+productImage+"' alt='' /></div><span>"+productName+"</span><strong>$39</strong><div class='cart-item-border'></div><div class='delete-item'></div></div>";			
 
-			$("#cart .empty").hide();
-			$("#cart .basket").hide();
-			
+			$("#cart .empty").hide();			
 			$("#cart").append(cartItem);
-			$("#cart").append(basket);
 			$("#checkout").fadeIn(500);
 			
 			$("#cart .cart-item").last()
 				.addClass("flash")
 				.find(".delete-item").click(function(){
-
-					let iteme = $(this).parent().find('span').get(0).innerHTML;
-					console.log(iteme);
-					console.log(selectItem[iteme]);
-					delete selectItem[iteme];
-					console.log(selectItem);
-					totalPrice = 0;
-					for(i in selectItem){
-						console.log(Number(selectItem[i].replace("원","")));
-						totalPrice += Number(selectItem[i].replace("원",""));
-					}
-					$("#cart .basket").hide();
-					basket = "<div class='basket'>Total: "+totalPrice+"원 </div>";
-					$("#cart").append(basket);
-
 					$(this).parent().fadeOut(300, function(){
-
 						$(this).remove();
-
-						// if($("#cart .cart-item").size() == 0){
-						// 	$("#cart .empty").fadeIn(500);
-						// 	$("#checkout").fadeOut(500);
-						// }
+						if($("#cart .cart-item").size() == 0){
+							$("#cart .empty").fadeIn(500);
+							$("#checkout").fadeOut(500);
+						}
 					})
 				});
  		    setTimeout(function(){

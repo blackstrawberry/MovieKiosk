@@ -980,10 +980,9 @@ div.sku strong{
 
 /* 사설 */
 .con {
-	/* width: 90vw; */
+	width: 90vw;
 	height: 90vh;
 	text-align: center;
-	background-color: black;
 }
 
 .hd {
@@ -996,14 +995,13 @@ div.sku strong{
 }
 
 .vid {
-	/* margin-left: 5%; */
-	height: 100%;
+	margin-left: 5%;
 	width: 100%;
+	height: 100%;
 	/* position: absolute; */
 	overflow: hidden;
 	/* object-fit: cover; */
 	background-color: black;
-	
 }
 
 .logo {
@@ -1011,13 +1009,6 @@ div.sku strong{
 	height: 128px;
 	float: left;
 	margin-left: 10%;
-}
-
-.home {
-	height: 30%;
-	float: right;
-	padding-right: 10%;
-	padding-top: 3%;
 }
 
 .ft {
@@ -1049,16 +1040,23 @@ div.sku strong{
 	/* background-size: contain;
 	background-repeat: no-repeat; */
 	background-color: white;
-	
-	
 }
 
 .im {
-	padding-left: 300px;
-	margin-left: 100px;
+	width: 30%;
+	height: 30%;
+	text-align: center;
+	margin-top: 10%;
+	margin-left: 7.5%;
 }
 
-/* .modal_background{
+.popcorn{
+		width: 30%;
+		height: 60%;
+		float: left;	
+	}
+
+.modal_background{
 	position: fixed;
 	top:0; left: 0; bottom: 0; right: 0;
 	background: rgba(0, 0, 0, 0.8);
@@ -1071,19 +1069,18 @@ div.sku strong{
 	top: calc(50vh - 100px); left: calc(50vw - 200px);
 	background-color: white;
 	display: flex; justify-content: center;
-	text-align: center;
 	align-items: center;
 	border-radius: 10px;
 	width: 400px;
 	height: 200px;
-	} */
+	}
 
 .imm {
+	float: left;
+	width: 40%;
+	height: 70%;
+	padding-top: 10%;
 	
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-
 }
 
 .wrap {
@@ -1115,70 +1112,14 @@ a.button {
 }
 
 a.button:hover {
-	color: rgba(129, 129, 129, 0.85);
+	color: rgba(255, 255, 255, 0.85);
 	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
 }
 
-.myButton {
-	box-shadow: inset 0px 1px 0px 0px #ffffff;
-	background: linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
-	background-color: #ffffff;
-	border-radius: 6px;
-	border: 1px solid #dcdcdc;
-	display: inline-block;
-	cursor: pointer;
-	color: #666666;
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 6px 24px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #ffffff;
-}
 
-.myButton:hover {
-	background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color: #f6f6f6;
-}
-
-.myButton:active {
-	position: relative;
-	top: 1px;
-}
-
-.jb-input {
+/* .form-control {
+	margin-top: 10%;
+	margin-left: 25%;
 	width: 50%;
-	/* 원하는 너비 설정 */
-	height: 50%;
-	/* 높이값 초기화 */
-	line-height: normal;
-	/* line-height 초기화 */
-	padding: .8em .5em;
-	/* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
-	border: 1px solid #999;
-	border-radius: 0;
-	/* iSO 둥근모서리 제거 */
-	-webkit-appearance: none;
-	/* 브라우저별 기본 스타일링 제거 */
-	-moz-appearance: none;
-	appearance: none;
-}
-
-.jb-wrap {
-	position: relative;
-}
-
-.jb-wrap img {
-	width: 100%;
-	vertical-align: middle;
-}
-
-.jb-text {
-	margin-bottom: 20%;
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
+} */
