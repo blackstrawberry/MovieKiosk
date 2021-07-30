@@ -250,7 +250,6 @@ $(document).ready(function(){
 	
 		localStorage.setItem("menu", JSON.stringify(selectItem) );
 		let g_menu =  localStorage.getItem("menu");
-		alert(g_menu);
 
 
 
