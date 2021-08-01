@@ -215,6 +215,7 @@ ticketing.addEventListener('click', function () {
                 "personnel" : allarray[4],
                 "seat_1" : allarray[5]
             };
+    
 
             // alert(`${allarray} 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
 
@@ -235,6 +236,7 @@ ticketing.addEventListener('click', function () {
                 "seat_1" : allarray[5],
                 "seat_2" : allarray[6]
             };
+        
 
             // 이전 얼럿 alert(`${stringTotalA} 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
             // alert(`${allarray} 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
@@ -257,6 +259,7 @@ ticketing.addEventListener('click', function () {
                 "seat_2" : allarray[6],
                 "seat_3" : allarray[7]
             };
+          
 
             // alert(`${allarray} 성인 ${countSeat}인   가격 : ${seatPrice}원     `);
 
@@ -280,28 +283,6 @@ ticketing.addEventListener('click', function () {
                 "seat_4" : allarray[8]
             };
         }
-
-        // 값 tiket_reservation.php로 전송
-        // $.ajax({
-        //     url: "http://smoda.kr/yonghun/tiket_reservation.php", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
-        //     data: {
-        //         test: allarray
-        //     }, // HTTP 요청과 함께 서버로 보낼 데이터
-        //     method: "GET", // HTTP 요청 메소드(GET, POST 등)
-        //     dataType: 'text', // 서버에서 보내줄 데이터의 타입
-        //     success: function () {
-        //         alert("성공");
-        //     },
-        //     error: function (request, status, error) {
-        //         alert(
-        //             "code:" + request.status + "\nmessage:" + request.responseText + "\nerror:" +
-        //             error
-        //         );
-        //     }
-        // });
-
- 
-
         json_data = JSON.stringify(json_data);
         $.ajax({
             url: "http://smoda.kr/yonghun/tiket_reservation.php",
@@ -320,5 +301,8 @@ ticketing.addEventListener('click', function () {
                 console.log(thrownError);
             }
         });
+        localStorage["resevationPersonnel"] = countSeat;
+        console.log(localStorage["resevationPersonnel"]); 
+
     }
 });

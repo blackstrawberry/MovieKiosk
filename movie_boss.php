@@ -1,38 +1,3 @@
-<<<<<<< HEAD:boss.php
-<?php
-ini_set('display_errors', true);
-
-?>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
-<div id="open-modal" class="modal-window">
-    <div id="main">
-        <label for="open-modal"></label>
-        <img src="./images/SSSnack.png" style="width:60%;">
-            <h2>예약이 완료되었습니다.<br></h2>
-                <h1 style="margin-top:-30px;">스낵류를 드시겠습니까?</h1>
-
-                <!-- x누르면 모달만 지우고 싶은데 그게 잘 안됨 -->
-                <a href="" title="Close" class="modal-close" style="size:1px;">X</a>
-                <!-- modal -->
-
-                <div class="card">
-
-                    <div class="text">
-                        <div class="title" style="margin-top:80px; margin-left:50px;">
-                            <h2>예(스낵창) / 아니요(결제창)</h2>
-                        </div>
-
-                    </div>
-
-                    <div class="buttons">
-                        <!-- 예 누르거나 아니오 눌렀을 때 함수 걸어놓으면 이동가능 -->
-                        <div class="button" onclick="">예</div>
-                        <div class="button">아니요</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-=======
 <!-- 스낵창 모달 -->
 <div id="open-modal" class="modal-window">
     <div id="main">
@@ -84,7 +49,6 @@ ini_set('display_errors', true);
       <a onclick="close_noenter();" style="color:white;" title="Close" class="modal-close">(X)</a> 
       </div>
   </div>
->>>>>>> song:movie_boss.php
 
         <div id="open-m" class="modal-w">
             <div id="main1">
@@ -99,47 +63,6 @@ ini_set('display_errors', true);
             </div>
 
             <div id="CM">
-<<<<<<< HEAD:boss.php
-                <div>
-                    <h2 style="color:white; margin-top:-30px;">상영관부터 순서대로 클릭해주세요!</h2>
-                </div>
-                <!-- <input type="checkbox" id="popup"> <label for="popup"><img
-                src="./images/res.jpg" style="width:395px; height: 210px; margin-left:-90px;
-                margin-top:-90px;"></label> <div> <div> <label for="popup"></label> -->
-                <div class="container">
-                    <div class="inner_container">
-                        <div class="select_movie">
-
-                            <select class="movie_name_place">
-                                <option selected="selected">2 D</option>
-
-
-                            </select>
-                            <select class="movie_name">
-                                <option selected="selected">보스 베이비2</option>
-                            
-
-                            </select>
-                            <select class="movie_name_date">
-                                <option>날짜</option>
-                                <option>2021.07.24(토)</option>
-                                <option>2021.07.25(일)</option>
-                                <option>2021.07.26(월)</option>
-                                <option>2021.07.27(화)</option>
-                                <option>2021.07.28(수)</option>
-
-                            </select>
-                            <select class="movie_name_time">
-                                <option>시간</option>
-                                <option>09:00 - 10:50
-                                </option>
-                                <option>10:30 - 12:20</option>
-                                <option>12:00 - 13:50</option>
-                                <option>13:30 - 15:20</option>
-                                <option>16:00 - 17:50</option>
-                                <option>19:00 - 20:50</option>
-                            </select>
-=======
 				<div>
 					<h2 style="color:white; margin-top:-50px; color:#ECF6CE">Thank u for coming</h2>
 				</div>
@@ -331,7 +254,6 @@ ini_set('display_errors', true);
 																	</table>
 																</div>
 															</div>
->>>>>>> song:movie_boss.php
 
                         </div>
 
