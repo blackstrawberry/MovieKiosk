@@ -205,13 +205,13 @@ html {
 } */
 
 .btn {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  display: inline-block;
+  display: inline-block; */
   height: 3em;
-  width: 10em;
+  /* width: 10em;
   line-height: 3em;
   border-radius: 1.5em;
   
@@ -221,7 +221,7 @@ html {
   user-select: none;
   
   animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 .modal .inside { 
@@ -452,7 +452,7 @@ html {
 }
 .empty{
     width:35px;
-    background-color:black;
+    /* background-color:black; */
 } 
  
 .seat_{
@@ -561,7 +561,7 @@ td{
 }
 
 @keyframes delayedFadeIn {
-  from: {
+  from {
     opacity: 0
   }
   55% {
